@@ -1,0 +1,511 @@
+@media only screen and (max-width:1024px){
+	.tableResponsive table,.tableResponsive thead,.tableResponsive tbody,.tableResponsive th,.tableResponsive td,.tableResponsive tr{display:block}
+	.tableResponsive thead tr{position:absolute;top:-9999px;left:-9999px}
+	.tableResponsive tr{border:1px solid #cacaca;margin-bottom:20px;border-bottom:0px}
+	.tableResponsive td{border:none;border-bottom:1px solid #cacaca;position:relative;padding-left:50%!important}
+	.tableResponsive td:before{position:absolute;top:9px;left:6px;width:45%;padding-right:10px;white-space:nowrap;color:#111!important}
+	.tableResponsive td:nth-of-type(1):before{content:"Employer Name"}
+	.tableResponsive td:nth-of-type(2):before{content:"Time Period"}
+	.tableResponsive td:nth-of-type(3):before{content:"End Date"}
+	.tableResponsive td:nth-of-type(4):before{content:"Total Amount"}
+	.tableResponsive td:nth-of-type(5):before{content:"Actions"}
+
+	.tableResponsive.invoiceDetailTable td:nth-of-type(1):before{content:"S.no"}
+	.tableResponsive.invoiceDetailTable td:nth-of-type(2):before{content:"Start Date"}
+	.tableResponsive.invoiceDetailTable td:nth-of-type(3):before{content:"Total Amount"}
+	.tableResponsive.invoiceDetailTable td:nth-of-type(4):before{content:""}
+	.tableResponsive.invoiceDesWrap td:nth-of-type(1):before{content:"Description"}
+	.tableResponsive.invoiceDesWrap td:nth-of-type(2):before{content:"bill"}
+	.tableResponsive.invoiceDesWrap td:nth-of-type(3):before{content:"rate"}
+	.tableResponsive.invoiceDesWrap td:nth-of-type(4):before{content:"amount"}
+	.paymentTable.tableResponsive td:nth-of-type(1):before{content:"Employer Name"}
+	.paymentTable.tableResponsive td:nth-of-type(2):before{content:"Project Name"}
+	.paymentTable.tableResponsive td:nth-of-type(3):before{content:"Start Date"}
+	.paymentTable.tableResponsive td:nth-of-type(4):before{content:"End Date"}
+	.paymentTable.tableResponsive td:nth-of-type(5):before{content:"Total Amount"}
+	.paymentTable.tableResponsive td:nth-of-type(6):before{content:"Invoice Status "}
+	
+	.activeUser.tableResponsive td:nth-of-type(1):before{content:"Resource Name"}
+	.activeUser.tableResponsive td:nth-of-type(2):before{content:"Start Date "}
+	.activeUser.tableResponsive td:nth-of-type(3):before{content:"End Date "}
+	.activeUser.tableResponsive td:nth-of-type(4):before{content:"Pending Invoice "}
+	.activeUser.tableResponsive td:nth-of-type(5):before{content:"Total Amount Invoiced"}
+	.activeUser.tableResponsive td:nth-of-type(6):before{content:"Actions "}
+	.dashboardHiringTable.tableResponsive td:nth-of-type(1):before{content:"Resource Name"}
+	.dashboardHiringTable.tableResponsive td:nth-of-type(2):before{content:"Start Date "}
+	.dashboardHiringTable.tableResponsive td:nth-of-type(3):before{content:"End Date "}
+	.dashboardHiringTable.tableResponsive td:nth-of-type(4):before{content:"Total Billing  "}
+	.dashboardHiringTable.tableResponsive td:nth-of-type(5):before{content:"Actions "}
+	.dashboardEmployer.tableResponsive td:nth-of-type(1):before{content:"Resource Name"}
+	.dashboardEmployer.tableResponsive td:nth-of-type(2):before{content:"Start Date "}
+	.dashboardEmployer.tableResponsive td:nth-of-type(3):before{content:"End Date "}
+	.dashboardEmployer.tableResponsive td:nth-of-type(4):before{content:"Hiring Manager "}
+	.dashboardEmployer.tableResponsive td:nth-of-type(5):before{content:"Total Billing "}
+	.dashboardEmployer.tableResponsive td:nth-of-type(6):before{content:"Actions "}
+
+	
+	.pendingBooking.tableResponsive td:nth-of-type(1):before{content:"Employer Name"}
+	.pendingBooking.tableResponsive td:nth-of-type(2):before{content:"Start Date "}
+	.pendingBooking.tableResponsive td:nth-of-type(3):before{content:"End Date"}
+	.pendingBooking.tableResponsive td:nth-of-type(4):before{content:"Total Amount"}
+	.pendingBooking.tableResponsive td:nth-of-type(5):before{content:"Actions"}
+
+	.bookingWrap table td{border-bottom:1px solid #cacaca}
+	.bookingWrap table{border:0px}
+	.bookingWrap table tr:nth-child(2n+1){background:transparent}
+	.bookingWrap table tr td:nth-child(even){background:#f0f0f0}
+	.bookingWrap table td{border-right:0px}
+	.tableWrap{border-radius:0px}
+	.invoiceDesWrap{border:0px}
+	.bookingWrap table tr:nth-child(2n){background:transparent}
+	.shortlistedWrap .bookingWrap table tr td:nth-child(2n){background:transparent}
+	.shortlistedWrap .bookingWrap table tr:nth-child(2n){background:#f0f0f0}
+	.shortlistedWrap .bookingWrap table{border:1px solid #cacaca}
+	.shortlistedWrap .bookingWrap table td,.invoiceDetailTable  table td{border-right:1px solid #cacaca}
+	.tabDisNone{display:none}
+
+	.invoiceDetailTable  table tr td:nth-child(2n){background:transparent}
+	.invoiceDetailTable  table tr:nth-child(2n){background:#f0f0f0}
+	.invoiceDetailTable  table{border:1px solid #cacaca}
+}
+@media (min-width:576px){
+	.col-sm{-ms-flex-preferred-size:0;flex-basis:0;-ms-flex-positive:1;flex-grow:1;max-width:100%}
+	.col-sm-auto{-ms-flex:0 0 auto;flex:0 0 auto;width:auto;max-width:none}
+	.col-sm-1{-ms-flex:0 0 8.333333%;flex:0 0 8.333333%;max-width:8.333333%}
+	.col-sm-2{-ms-flex:0 0 16.666667%;flex:0 0 16.666667%;max-width:16.666667%}
+	.col-sm-3{-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%}
+	.col-sm-4{-ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:33.333333%}
+	.col-sm-5{-ms-flex:0 0 41.666667%;flex:0 0 41.666667%;max-width:41.666667%}
+	.col-sm-6{-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%}
+	.col-sm-7{-ms-flex:0 0 58.333333%;flex:0 0 58.333333%;max-width:58.333333%}
+	.col-sm-8{-ms-flex:0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%}
+	.col-sm-9{-ms-flex:0 0 75%;flex:0 0 75%;max-width:75%}
+	.col-sm-10{-ms-flex:0 0 83.333333%;flex:0 0 83.333333%;max-width:83.333333%}
+	.col-sm-11{-ms-flex:0 0 91.666667%;flex:0 0 91.666667%;max-width:91.666667%}
+	.col-sm-12{-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}
+}
+@media (min-width:768px){
+	.col-md{-ms-flex-preferred-size:0;flex-basis:0;-ms-flex-positive:1;flex-grow:1;max-width:100%}
+	.col-md-auto{-ms-flex:0 0 auto;flex:0 0 auto;width:auto;max-width:none}
+	.col-md-1{-ms-flex:0 0 8.333333%;flex:0 0 8.333333%;max-width:8.333333%}
+	.col-md-2{-ms-flex:0 0 16.666667%;flex:0 0 16.666667%;max-width:16.666667%}
+	.col-md-3{-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%}
+	.col-md-4{-ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:33.333333%}
+	.col-md-5{-ms-flex:0 0 41.666667%;flex:0 0 41.666667%;max-width:41.666667%}
+	.col-md-6{-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%}
+	.col-md-7{-ms-flex:0 0 58.333333%;flex:0 0 58.333333%;max-width:58.333333%}
+	.col-md-8{-ms-flex:0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%}
+	.col-md-9{-ms-flex:0 0 75%;flex:0 0 75%;max-width:75%}
+	.col-md-10{-ms-flex:0 0 83.333333%;flex:0 0 83.333333%;max-width:83.333333%}
+	.col-md-11{-ms-flex:0 0 91.666667%;flex:0 0 91.666667%;max-width:91.666667%}
+	.col-md-12{-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}
+}
+@media (min-width:992px){
+	.col-lg{-ms-flex-preferred-size:0;flex-basis:0;-ms-flex-positive:1;flex-grow:1;max-width:100%}
+	.col-lg-auto{-ms-flex:0 0 auto;flex:0 0 auto;width:auto;max-width:none}
+	.col-lg-1{-ms-flex:0 0 8.333333%;flex:0 0 8.333333%;max-width:8.333333%}
+	.col-lg-2{-ms-flex:0 0 16.666667%;flex:0 0 16.666667%;max-width:16.666667%}
+	.col-lg-3{-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%}
+	.col-lg-4{-ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:33.333333%}
+	.col-lg-5{-ms-flex:0 0 41.666667%;flex:0 0 41.666667%;max-width:41.666667%}
+	.col-lg-6{-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%}
+	.col-lg-7{-ms-flex:0 0 58.333333%;flex:0 0 58.333333%;max-width:58.333333%}
+	.col-lg-8{-ms-flex:0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%}
+	.col-lg-9{-ms-flex:0 0 75%;flex:0 0 75%;max-width:75%}
+	.col-lg-10{-ms-flex:0 0 83.333333%;flex:0 0 83.333333%;max-width:83.333333%}
+	.col-lg-11{-ms-flex:0 0 91.666667%;flex:0 0 91.666667%;max-width:91.666667%}
+	.col-lg-12{-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}
+}
+@media (min-width:1200px){
+	.col-xl{-ms-flex-preferred-size:0;flex-basis:0;-ms-flex-positive:1;flex-grow:1;max-width:100%}
+	.col-xl-auto{-ms-flex:0 0 auto;flex:0 0 auto;width:auto;max-width:none}
+	.col-xl-1{-ms-flex:0 0 8.333333%;flex:0 0 8.333333%;max-width:8.333333%}
+	.col-xl-2{-ms-flex:0 0 16.666667%;flex:0 0 16.666667%;max-width:16.666667%}
+	.col-xl-3{-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%}
+	.col-xl-4{-ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:33.333333%}
+	.col-xl-5{-ms-flex:0 0 41.666667%;flex:0 0 41.666667%;max-width:41.666667%}
+	.col-xl-6{-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%}
+	.col-xl-7{-ms-flex:0 0 58.333333%;flex:0 0 58.333333%;max-width:58.333333%}
+	.col-xl-8{-ms-flex:0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%}
+	.col-xl-9{-ms-flex:0 0 75%;flex:0 0 75%;max-width:75%}
+	.col-xl-10{-ms-flex:0 0 83.333333%;flex:0 0 83.333333%;max-width:83.333333%}
+	.col-xl-11{-ms-flex:0 0 91.666667%;flex:0 0 91.666667%;max-width:91.666667%}
+	.col-xl-12{-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}
+}
+@media screen and (max-width:1500px){
+	.container-1340{max-width:1250px}
+}
+@media screen and (max-width:1300px){
+	.topFilterWrap .orangeBtn{margin-right:5px}
+}
+@media screen and (max-width:1199px){
+	.inputWrap,.custmCheckBox{margin-bottom:20px}
+	.topFilterWrap .btnWrap{padding-top:0px}
+	.acceptBookingWrap h2{margin-top:10px}
+	.talentWorkDeployWrap .workWrap{padding-left:70px}
+	.talentWorkDeployWrap .talentWrap{padding-right:70px}
+	.availableCurrentWrap .d-flex > div{margin-right:10px}
+}
+@media screen and (max-width:1024px){
+	.PlaceHolderPage .getYourGigWrap h1{font-size:40px}
+	.PlaceHolderPage .getYourGigWrap .container-1340{height:427px}
+	.PlaceHolderPage .talentWorkDeployWrap h3{font-size:26px}
+	.PlaceHolderPage .talentWorkDeployWrap p{font-size:25px}
+	.PlaceHolderPage .talentWorkDeployWrap a,.PlaceHolderPage .talentWorkDeployWrap button{font-size:14px;width:140px;padding:10px 10px}
+	.PlaceHolderPage .talentWorkDeployWrap .container-1340{background-size:100% auto}
+	.sliderWrap .feedback{font-size:18px}
+	.sliderWrap .mindImage{width:118px!important}
+	header .LoginForm div{padding-right:10px;width:150px}
+	header .LoginForm div input{width:100%}
+	header .navbar-nav li{margin-right:10px}
+	header .navbar-brand{margin-right:30px}
+	header .navbar-brand{max-width:115px}
+	header .navbar-brand img{max-width:100%}
+	.PlaceHolderPage .getYourGigWrap .container-1340{height:300px;background-size:300px}
+	.forHirerIcon,.forworkerIcon{margin-right:30px}
+	.forHirerWorkerWrap .hirertext,.forHirerWorkerWrap .workertext{font-size:30px}
+	.weekdaysWrap{padding-top:10px}
+	.tableResponsive td::before{top:17px}
+}
+@media screen and (max-width:991px){
+	.PlaceHolderPage .talentWorkDeployWrap .content img{width:90px}
+	.PlaceHolderPage .getYourGigWrap p{max-width:400px}
+	header .navbar-collapse{position:fixed;top:0px!important;height:100%;width:250px;background:#04405c;display:block}
+	header .navbar-collapse{z-index:9;-webkit-transition:all .69s ease;-moz-transition:all .69s ease;-o-transition:all .69s ease;transition:all .69s ease;text-align:center;padding-top:30px;overflow:auto}
+	header .navbar-collapse{right:-100%;-ms-flex-wrap:wrap;flex-wrap:wrap}
+	header .navbar-collapse.show{right:0;top:0px}
+	header .navbar-nav .nav-link,header a{display:block;color:#fff;font-size:15px}
+	header a{font-weight:600}
+	header .navbar-nav li:first-child{margin-right:0px}
+	header .navbar-nav li{display:block;margin-bottom:15px}
+	header .toggleBtn,header .toggleBtn2{display:block}
+	header ul.navbar-nav{max-width:100%;-ms-flex:0 0 100%;flex:0 0 100%;padding-top:30px}
+	header .LoginForm{display:block;margin:auto;padding-top:0px;text-align:center}
+	header .LoginForm div{padding-right:0px;width:200px;margin:auto}
+	.navbar-collapse.show{display:block!important}
+	header .LoginForm input[type="text"]{margin-bottom:10px}
+	header .navbar-nav .nav-link.active{display:inline-block}
+	header .toggleBtn2 span{background:#fff;width:24px;height:3px;display:block;margin-bottom:4px}
+	header .toggleBtn2{z-index:999;background:transparent;border:none;position:absolute;top:20px;right:20px}
+	header .btnWrap{text-align:right;padding-right:10px}
+	header.headerBeforeLogin .navbar-collapse{width:250px}
+	header .navbar-collapse{text-align:left;padding-top:8px;padding-bottom:30px}
+	header ul,header .welcomeWrap{border-bottom:2px solid #002639;padding-left:30px;padding-right:30px;padding-bottom:20px}
+	header ul:last-child{border-bottom:0px}
+	.PlaceHolderPage.contactUsPage .getYourGigWrap .container-1340{background-size:400px;height:400px}
+	.callLocationWrap span{font-size:13px;text-align:center}
+	.callLocationWrap .spriteSheet{margin-right:10px}
+	.callLocationWrap .column-4 .d-flex{justify-content:center;-ms-flex-wrap:wrap;flex-wrap:wrap}
+	.callLocationWrap span:last-child{flex:0 0 100%;margin-top:10px}
+	.callLocationWrap span:last-child br{display:none}
+	.PlaceHolderPage.AboutUsPage .getYourGigWrap p{max-width:479px}
+	header .navbar-nav li{margin-right:0px}
+	header .toggleBtn2{width:45px}
+	header .toggleBtn2 img{width:100%}
+	.profileWrap .column-6,.profileWrap .column-4{-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}
+	.bookingSummaryWrap .col-lg-3{padding-bottom:20px}
+	.talentWorkDeployWrap .talentWrap{padding-right:20px}
+	.talentWorkDeployWrap .workWrap{padding-left:20px}
+	.talentWorkDeployWrap .talentImage,.talentWorkDeployWrap .talentWrap:hover .talentImage,.talentWorkDeployWrap .workWrap:hover .workImage,.talentWorkDeployWrap  .workImage{background-size:200px;height:160px;background-position:center}
+	header .mobile-dis-block{display:inline-flex}
+	header .notiWrap{top:0px}
+	header .welcomeWrap .welcomeText{color:#fff;font-weight:300;font-family:'Montserrat',sans-serif}
+	header .welcomeWrap p{color:#fff;font-weight:600;font-family:'Montserrat',sans-serif}
+	header .navbar-nav .nav-link{font-weight:600}
+	.availableCurrentWrap > .d-flex{-ms-flex-wrap:wrap;flex-wrap:wrap}
+	.availableCurrentWrap .d-flex > div{margin-top:10px}
+	.searchResult .blueBtn{margin-right:6px}
+	.employerDetail{border-top:0px}
+	.searchResult{padding-top:30px;padding-bottom:30px}
+	.searchResult .employerDetail .content{margin-top:10px}
+	.signOutWrap,.welcomeWrap{display:block}
+	header .mobile-dis-none{display:none}
+	header ul{padding-top:20px;width:100%}
+	.acceptBookingWrap{padding-top:30px}
+	header .navbar-nav .nav-link{display:inline-block}
+	header .pageInfoMobile{display: none!important;}
+	header .navbar-brand.mobile-dis-none{display: block;}
+}
+@media screen and (max-width:767px){
+	.PlaceHolderPage .talentWorkDeployWrap .content{-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%;margin-bottom:50px}
+	.PlaceHolderPage .talentWorkDeployWrap h3{font-size:18px;margin-bottom:20px}
+	.PlaceHolderPage .talentWorkDeployWrap{padding-top:30px}
+	footer a{font-size:13px}
+	.PlaceHolderPage .talentWorkDeployWrap p{font-size:24px;margin-top:0px}
+	.PlaceHolderPage .talentWorkDeployWrap a,.PlaceHolderPage .talentWorkDeployWrap button{font-size:13px;width:120px;padding:8px 10px}
+	.PlaceHolderPage .talentWorkDeployWrap .content img{width:90px}
+	header .navbar-brand img{width:100px}
+	header .navbar{padding:15px}
+	.sliderWrap .feedback{font-size:17px;padding-left:35px;padding-right:35px}
+	.sliderWrap .representive{font-size:12px}
+	.sliderWrap .representive{margin-top:20px}
+	.sliderWrap .owl-theme .owl-dots{margin-top:30px}
+	.sliderWrap{padding-top:30px;padding-bottom:30px}
+	footer .logoWrap img{width:90px}
+	.PlaceHolderPage .getYourGigWrap h1{font-size:30px}
+	.PlaceHolderPage .getYourGigWrap h1{margin-bottom:15px}
+	.PlaceHolderPage .getYourGigWrap p{font-size:15px}
+	.PlaceHolderPage .getYourGigWrap .container-1340{height:400px;padding-top:20px;display:block;background-size:300px;background-position:center bottom}
+	footer .navWrap a{margin-right:13px}
+	#googleMap{height:250px}
+	.PlaceHolderPage.contactUsPage .getYourGigWrap .container-1340{background-size:300px;background-position:center bottom;display:block;height:300px}
+	.contactUsForm h2{font-size:20px}
+	.contactUsForm{padding-top:30px;padding-bottom:24px}
+	.contactUsForm .inputWrap{margin-bottom:25px}
+	.contactUsForm h2{margin-bottom:30px}
+	.contactUsForm .inputWrap input,.contactUsForm .inputWrap textarea{font-size:13px;padding:9px 18px}
+	.contactUsForm .inputWrap label{font-size:13px}
+	.contactUsForm .submitBtn{font-size:14px;width:130px;padding:11px 5px}
+	.PlaceHolderPage.AboutUsPage .getYourGigWrap .container-1340{background-position:center bottom;height:265px}
+	.AboutUsPage .ourMission{padding-top:30px;padding-bottom:30px}
+	.AboutUsPage .TheGig{padding:20px 0px}
+	.AboutUsPage .TheGig h3{font-size:17px}
+	.AboutUsPage .ourMission h2{margin-bottom:20px}
+	.AboutUsPage .ourMission h2{font-size:20px}
+	.signupModal .modal-content{padding-top:36px;padding-bottom:40px;padding-left:20px;padding-right:20px}
+	.signupModal input[type="button"],.signupModal input[type="submit"]{width:126px;padding:10px 5px;font-size:14px}
+	.signupModal .orangeBtn{margin-right:10px!important}
+	.signupModal .inputWrap{margin-bottom:20px}
+	.contactUsForm .inputWrap label,.modal .inputWrap label,.contactUsForm .inputWrap input,.contactUsForm .inputWrap textarea,.modal .inputWrap input,.modal .inputWrap textarea{font-size:13px}
+	.signupModal h2{font-size:18px;margin-bottom:25px}
+	.customerReviewsSec .content{border-right:0px}
+	.WantToBecomeWrap{padding:20px 0px}
+	.secHeading{font-size:20px}
+	.WantToBecomeWrap span{font-size:18px}
+	.customerReviewsSec{padding-top:30px;padding-bottom:30px}
+	.customerReviewsSec .secHeading{margin-bottom:30px}
+	.topServiceSlider .owl-dots{margin-top:0px}
+	.topServiceWrap .secHeading{margin-bottom:30px}
+	.topServiceWrap{padding:30px 0px}
+	.aboutSec p{padding:0px}
+	.aboutSec a{margin-top:20px}
+	.PlaceHolderPage .getYourGigWrap p{max-width:100%;width:100%}
+	.forHirerWorkerWrap .column-6{-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}
+	.forHirerWrap{margin-bottom:30px}
+	.forHirerWorkerWrap .hirertext,.forHirerWorkerWrap .workertext{font-size:25px}
+	.forHirerIcon,.forworkerIcon{margin-right:15px}
+	.forHirerWorkerWrap .subHead,.forHirerWorkerWrap p{font-size:14px;margin-bottom:15px}
+	.forHirerWorkerWrap .forworkerWrap ul li,.forHirerWorkerWrap .forHirerWrap ul li{font-size:14px;margin-bottom:30px}
+	.forHirerWorkerWrap{padding:30px 0px}
+	.forHirerWrap{padding-right:0px}
+	.forworkerWrap{padding-left:0px}
+	.profileWrap .column-3{-ms-flex:0 0 41.666667%;flex:0 0 41.666667%;max-width:41.666667%}
+	.mobile-column-7{-ms-flex:0 0 58.333333%;flex:0 0 58.333333%;max-width:58.333333%}
+	.signupModal.modal-720 .modal-content{padding-left:10px;padding-right:10px}
+	.signupModal.modal-720 .pad-lf-0{padding-left:15px}
+	.signupModal.modal-720 .pad-rt-0{padding-right:15px}
+	.invoiceContentWrap .detailWrap,.invoiceDesWrap table td,.invoiceDesWrap table th,.totalWrap{padding:10px 10px}
+	.totalWrap div:last-child{margin-bottom:0px}
+	.invoiceDesWrap{overflow-x:auto}
+	.talentWorkDeployWrap .workWrap,.talentWorkDeployWrap .talentWrap{-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}
+	.PlaceHolderPage .talentWorkDeployWrap{padding-top:0px}
+	.talentWorkDeployWrap .talentWrap{padding-right:0px;text-align:center}
+	.talentWorkDeployWrap .talentWrap > div,.talentWorkDeployWrap .workWrap > div{float:none;max-width:100%}
+	.talentWorkDeployWrap .workWrap{padding-left:0px}
+	.talentWorkDeployWrap .talentWrap,.talentWorkDeployWrap .workWrap{padding-top:30px;padding-bottom:40px}
+	.aboutSec p{font-size:14px}
+	.PlaceHolderPage .aboutSec .container-1340{padding-bottom:40px}
+	.pad-lf-0{padding-left:15px}
+	.pad-rt-0{padding-right:15px}
+	.profileWrap .border-bt-grey{padding-top:30px;padding-bottom:20px}
+	.profileWrap h2{font-size:18px;margin-bottom:30px}
+	.profileWrap h4{font-size:16px;margin-bottom:10px}
+	.profileWrap h5.colorOrange{font-size:15px}
+	.inputWrap label,.profileWrap .uploadText{font-size:13px}
+	.iconfirmWrap{padding-top:20px;padding-bottom:30px}
+	.profileWrap .orangeBtn{margin-top:0px}
+	.orangeBtn,.blueBtn{font-size:14px;width:130px;padding:11px 10px}
+	.custmCheckBox [type="checkbox"]:not(:checked) + label,.custmCheckBox [type="checkbox"]:checked + label{font-size:13px}
+	.custmCheckBox{display:-ms-flexbox;display:flex}
+	.radioWrap label{margin-bottom:10px!important}
+	.custmCheckBox [type="checkbox"]:not(:checked) + label,.custmCheckBox [type="checkbox"]:checked + label{margin-bottom:10px}
+	.inputWrap input,.inputWrap textarea,.inputWrap select{font-size:13px;padding:8px 18px}
+	.selectWrap .selectArrowWrap{padding:8px 12px}
+	.blueBrowseBtn button{padding:8px 14px}
+	.calenderIconWrap{padding:2px 10px}
+	.flagImg{top: 50%;transform: translateY(-50%);}
+	.upload-btn-wrapper{margin-bottom:20px}
+	.profileWrap .uploadText{margin-top:20px}
+	.inputWrap input,.inputWrap textarea,.inputWrap select{padding:8px 10px}
+	.blueBrowseBtn{margin-bottom:0px!important}
+	.signOutWrap,.welcomeWrap{display:block}
+	.mobile-dis-none{display:none!important;}
+	.topFilterWrap .orangeBtn,.topFilterWrap .blueBtn{max-width:50%}
+	.bookingWrap ul.tabs{-ms-flex-wrap:wrap;flex-wrap:wrap}
+	.bookingWrap ul.tabs li:last-child a{border-bottom:0px}
+	.acceptBookingWrap h3{margin-top:8px;margin-bottom:15px}
+	.paginationWrap{-ms-flex-wrap:wrap;flex-wrap:wrap}
+	.paginationWrap .mar-lft-auto{max-width:500px}
+	.pagination .page-link{font-size:11px;padding-left:0px;padding-right:0px;margin-left:3px;margin-right:3px;padding-bottom:8px}
+	.lastIcon,.prevIcon{margin-right:5px}
+	.nextIcon,.lastIcon{margin-left:5px}
+	.pagination li{padding-top:8px}
+	.pagination{justify-content:space-between;padding-left:10px;padding-right:10px}
+	.paginationWrap label{font-size:14px}
+	.paginationWrap{padding-top:20px}
+	.bookingSummaryWrap .number{font-size:30px}
+	.bookingSummaryWrap .text{font-size:15px}
+	.tableResponsive td::before{top:15px}
+	.bookingWrap table td{padding:15px 10px}
+	.acceptBookingWrap{padding-top:30px;padding-bottom:30px}
+	.emplyerBooking.acceptBookingWrap{padding-top:0px}
+	.acceptBookingWrap h2{margin-bottom:25px}
+	.bookingDetailWrap .detail.boder-rt{border-right:0px}
+	.bookingDetailWrap .fontBold,.bookingDetailWrap .pricingWrap div span{display:block;margin-left:0px;margin-top:6px;line-height:1.7}
+	.bookingDetailWrap  div span.employerName{display:inline-block!important}
+	.bookingDetailWrap .pricingWrap div{margin-right:19px}
+	.availableCurrentWrap > .d-flex{-ms-flex-wrap:wrap;flex-wrap:wrap}
+	.availableCurrentWrap .d-flex > div{margin-bottom:10px;-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}
+	.availableCurrentWrap .d-flex > div,.availableCurrentWrap .orangeBtn{margin-right:0px}
+	.availableCurrentWrap .orangeBtn,.availableCurrentWrap .blueBtn{width:100%}
+	.availableCurrentWrap .orangeBtn{margin-bottom:10px}
+	.availableCurrentWrap .mar-lft-auto{margin-left:0px;width:100%}
+	.invoiceDetailTable .d-flex{-ms-flex-wrap:wrap;flex-wrap:wrap}
+	.bookingDetailWrap{margin-bottom:30px}
+	.bookingDetailWrap{margin-top:20px}
+	.invoiceDesWrap{border:none}
+	.weekdaysWrap button{font-size:16px;margin-top:15px}
+	.weekdaysWrap .custmCheckBox{margin-bottom:15px}
+	.bookingWrap ul.tabs.monthsTab{margin-bottom:10px}
+	.scheduleWrap .tabWeekWrap{margin-bottom:20px}
+	.gap{height:0px}
+	.EmployerCompleteprofile .custmCheckBox [type="checkbox"]:not(:checked) + label,.EmployerCompleteprofile .custmCheckBox [type="checkbox"]:checked + label{font-size:14px}
+	.EmployerCompleteprofile{padding-bottom:40px}
+	header .notiWrap{margin-right:16px}
+	header.dashboardHeader{box-shadow:0px 4px 4px 0px rgba(0,0,0,.2)}
+	.mobile-dis-block{display:block}
+	.bookingDetailWrap .detail{padding:16px 14px}
+	.rescheduleIcon{margin-right:0px}
+	.emplyerBooking .bookingDetailWrap .detail > div{flex:0 0 auto;margin-bottom:10px}
+	.boxShadowMobileNone{box-shadow:0px 0px 0px 0px!important}
+	.inputWrap.businessAddr{margin-bottom:0px}
+	.searchEmployer .container-1340{padding-bottom:30px;border:none}
+	.searchEmployer,header ul{padding-top:30px}
+	header ul{width:100%}
+	.backBtn{display:block}
+	.employeeProfile .availableCurrentWrap .d-flex > div{flex:0 0 auto;margin-right:10px}
+	.employeeProfile .orangeBtn,.employeeProfile .blueBtn{width:141px;margin-top:0px;margin-bottom:0px}
+	.schedulePage .orangeBtn,.schedulePage .blueBtn{margin-top:30px!important;margin-bottom:0px}
+	.employeeProfile .blueBtn{margin-right:3px}
+	.schedulePage .scheduleWrap{padding:20px 0px;padding-bottom:0px}
+	.schedulePage .availableCurrentWrap > .d-flex{padding-left:10px;font-size: 14px;}
+	.employeeProfile .bookingDetailWrap .detail > div{flex:0 0 auto}
+	.bookingWrap .detail img{margin-right:10px}
+	.bookingWrap .anumber{margin-bottom:10px}
+	.bookingWrap .anumber:last-child{margin-bottom:0px}
+	.employeeProfile .bookingDetailWrap .pricingWrap div{flex:0 0 50%;margin-right:0px;margin-bottom:10px}
+	.employeeProfile .bookingDetailWrap .pricingWrap{-ms-flex-wrap:wrap;flex-wrap:wrap}
+	.employeeProfile .bookingDetailWrap .pricingWrap div:nth-child(3),.employeeProfile .bookingDetailWrap .pricingWrap div:nth-child(4){margin-bottom:0px}
+	.employeeProfileSchedule  .calenderWrap{padding-top:20px}
+	.schedulePage .availableCurrentWrap .d-flex > div{-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%;margin-right:0px}
+	.resuduleBooking{margin-bottom:10px;padding-right:15px}
+	.makeBooking .selectedDatesWrap div{-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}
+	.makeBooking .selectedDatesWrap{-ms-flex-wrap:wrap;flex-wrap:wrap}
+	.makeBooking .pricingWrap div.d-flex{-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:0px}
+	.makeBooking .pricingWrap div.d-flex div{-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%;margin-right:0px;margin-bottom:10px}
+	.makeBooking .scheduleWrap{margin-bottom:20px;border-radius:5px;margin-top:20px}
+	.makeBooking .formWrap{border:none;padding-left:0px;padding-right:0px}
+	.makeBooking .DaysInfoWrap{border-bottom:1px solid #cacaca;border-bottom-right-radius:5px;border-bottom-left-radius:5px}
+	.makeBooking .bookingDetailWrap .fontBold,.makeBooking .bookingDetailWrap .pricingWrap div span{display:inline-block}
+	.makeBooking .bookingDetailWrap .pricingWrap div span{margin-left:5px}
+	.makeBooking .selectedDatesWrap div{margin-right:0px}
+	.makeBooking .selectedDatesWrap input{margin-right:10px;width:60px}
+	.BookQuoteWrap{display:flex}
+	.employeeProfile .blueBtn.generateQuot,.employeeProfile .orangeBtn.bookBtn{max-width:50%;-ms-flex:0 0 50%;flex:0 0 50%;margin-top:20px}
+	.makeBooking .formWrap{padding-bottom:0px}
+	header ul{padding-top:20px}
+	.bookingDetailWrap .pricingWrap div{margin-right:0px;flex:0 0 50%;margin-bottom:10px}
+	.bookingDetailWrap .pricingWrap div:nth-child(3),.bookingDetailWrap .pricingWrap div:nth-child(4){margin-bottom:0px}
+	.emplyerBooking .bookingDetailWrap .detail > div{-ms-flex-wrap:wrap;flex-wrap:wrap}
+	.thankyouWrap p{margin-bottom:10px;font-size:13px}
+	#bookingModal .ratingWrap div{padding-left:0px;padding-right:0px;max-width:50%;-ms-flex:0 0 50%;flex:0 0 50%;text-align:center;margin-bottom:10px}
+	#bookingModal .ratingWrap{-ms-flex-wrap:wrap;flex-wrap:wrap;margin-bottom:0px;max-width:300px;margin:auto;justify-content: center;}
+	.signupModal p{margin-bottom:10px}
+	.congratsMessage{font-size:16px;margin-bottom:30px;margin-top:20px}
+	.notificationWrap{right:14px}
+	.shortlistedWrap{padding-top:30px!important}
+	.chat-main-wrapper .user-search{border:0;background-color:transparent}
+	.chat-main-wrapper .user-list .user-detail{padding:13px 30px 13px 15px;position:relative}
+	.chat-main-wrapper .user-list .user-detail:after{position:absolute;right:25px;width:12px;height:17px;background:url("../images/App/forword.png") no-repeat;display:inline-block;content:'';background-size:100% 100%;top:50%;transform:translateY(-50%)}
+	.chat-main-wrapper .user-detail.active,.chat-main-wrapper .user-detail:hover{background-color:transparent;color:#013d5a}
+	.chat-main-wrapper .user-list .user-detail.active .user-name,.chat-main-wrapper .user-list .user-detail:hover .user-name,.chat-main-wrapper .user-list .user-detail .user-name{color:#013d5a}
+	.chat-main-wrapper .chat-header .user-info-box span.icon,.chat-main-wrapper .user-list .user-detail .user-image{width:35px;height:35px;margin-right:10px}
+	.chat-main-wrapper .chat-body .message-box .date-message.text-center{margin-bottom:20px}
+	.chat-main-wrapper .user-chat-container{margin-top:20px}
+	.chat-main-wrapper .chat-header .user-info-box span{font-size:13px}
+	.chat-main-wrapper .chat-body .message-wrapper .message-div,.chat-main-wrapper .chat-header .chat-refresh-box span{font-size:12px}
+	.chat-main-wrapper .chat-body .message-box .date-message{font-size:11px}
+	.chat-main-wrapper .user-list{height:auto}
+	.chat-main-wrapper.chat-main-wrapper-mobile{padding:0;position:relative}
+	.chat-main-wrapper.chat-main-wrapper-mobile .chat-body .message-wrapper{max-width:235px;width:100%}
+	.chat-main-wrapper.chat-main-wrapper-mobile .refresh-button{position:absolute;top:20px;right:15px;width:50px;height:50px;cursor:pointer;background-color:transparent;border:none;padding:0}
+	.chat-main-wrapper .chat-footer .text-box textarea{border-color:#cbcbcb}
+	.chat-main-wrapper.chat-main-wrapper-mobile .user-chat-container{border:0}
+	.chat-main-wrapper.chat-main-wrapper-mobile .user-chat-container .chat-body{padding:0 15px}
+	.chat-main-wrapper.chat-main-wrapper-mobile .user-chat-container .chat-body .message-wrapper .message-div{border-width:2px}
+	.chat-main-wrapper .chat-footer .button-box{width:92px}
+	.boxShadowSearch{box-shadow:0px 3px 3px 0px rgba(0,0,0,.2)}
+	.PlaceHolderPage.howItWorks .getYourGigWrap .container-1340{background-size: 300px;background-position: bottom center;}
+	.topFilterWrap .btnWrap{display: flex;}
+	.bookingSummaryWrap .orangeBg, .bookingSummaryWrap .blueBg {min-height: 100%;}
+	.bookingDetailWrap .detail .pricingWrap{flex-wrap: wrap;}
+	.mobileBtnFixed{position: fixed;bottom: 0px;left: 0px;right: 0px;margin:auto;background: #fff;padding: 10px;}
+	footer{display: none;}
+	.profileWrap{padding-bottom: 40px;}
+	.a_markUnavailableBtn{border: none;color: #fff;border-radius: 5px;font-size: 16px;padding: 9px 20px;font-weight: 600;
+								  font-family: 'Montserrat', sans-serif;width: 100%;margin-top: 25px;}
+    .weekdaysWrap .custmCheckBox{margin-right: 15px;margin-bottom: 30px;}
+    .pad-mobile-tp-0{padding-top: 0px!important;}
+    .availableCurrentWrap .d-flex > div{margin-bottom: 10px;-ms-flex: 0 0 50%;flex: 0 0 50%;max-width: 50%;font-size: 13px;}
+    .availableCurrentWrap .availbale, .availableCurrentWrap .currentBook, .availableCurrentWrap .unavailable, .availableCurrentWrap .withdrawn{margin-right: 5px;width: 20px;height: 20px;}
+    .employeeProfileSchedule{padding-top: 20px;padding: 20px 20px;}
+    .VisibleMobile{display: block!important;}
+    #sendMessage .inputWrap{margin-bottom: 10px;}
+    #sendMessage input[type="button"], #sendMessage input[type="submit"]{margin-top: 0px;}
+	header .pageInfoMobile{display: block!important;}
+	header .navbar-brand.mobile-dis-none{display: none;}
+	.invoiceContentWrap .col-md-6:first-child .detailWrap{border-bottom: 1px solid #cacaca;}
+	.employeeBookingSummaryWrap.bookingSummaryWrap .orangeBg, .bookingSummaryWrap.employeeBookingSummaryWrap .blueBg{min-height: auto;}
+}
+@media screen and (max-width:500px){
+	.PlaceHolderPage .talentWorkDeployWrap .content{max-width:100%;-ms-flex:0 0 100%;flex:0 0 100%}
+	.sliderWrap .feedback br{display:none}
+	.sliderWrap .feedback{font-size:15px}
+	footer .navWrap a{display:block;margin-right:0px;margin-bottom:8px;display:block}
+	footer .container-1340{-ms-flex-wrap:wrap;flex-wrap:wrap}
+	footer .logoWrap{margin-right:0px;max-width:100%;-ms-flex:0 0 100%;flex:0 0 100%;margin-bottom:19px}
+	footer .align-items-center{-ms-flex-align:start;align-items:flex-start}
+	.callLocationWrap .column-4{-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%;margin-bottom:20px}
+	.callLocationWrap .column-4:last-child{margin-bottom:0px}
+	.callLocationWrap span:last-child br{display:block}
+	.column-6{-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}
+	footer.beforeLogin .logoWrap{flex:0 0 auto;margin-bottom:0px}
+	footer .mar-lft-auto{margin-left:0;flex:0 0 100%}
+	footer.beforeLogin .mar-lft-auto{margin-left:auto;flex:0 0 auto}
+	.signupModal p.colorBlue{font-size:12px}
+	.WantToBecomeWrap{flex-direction:column}
+	.WantToBecomeWrap a{margin-left:0px;margin-top:15px}
+	.WantToBecomeWrap a{font-size:16px;padding:7px}
+	.forHirerWorkerWrap .hirertext,.forHirerWorkerWrap .workertext{font-size:23px}
+	.bookingSummaryWrap .number{font-size:28px}
+	.bookingSummaryWrap .text{font-size:16px}
+	.bookingWrap ul.tabs li{-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}
+	.bookingWrap ul.tabs li a{font-size:14px;border-bottom:1px solid #013d5a}
+	.paginationWrap .mar-lft-auto{margin-left:0px;width:100%;max-width:100%}
+	.pagination{padding-left:6px;padding-right:6px;margin-top:10px}
+	.bookingDetailWrap p,.bookingDetailWrap .pricingWrap div,.bookingDetailWrap .dateDetail div{font-size:12px}
+	.bookingSummaryWrap .orangeBg,.bookingSummaryWrap .blueBg{padding-top:30px;padding-bottom:30px}
+	.bookingDetailWrap .detail{-ms-flex-wrap:wrap;flex-wrap:wrap}
+	.bookingDetailWrap .detail >div{max-width:auto;-ms-flex:0 0 auto;flex:0 0 auto;margin-bottom:10px}
+	.bookingWrap ul.tabs.monthsTab li{-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}
+	.invoiceContentWrap p,.invoiceDesWrap p,.totalWrap p,.invoiceContentWrap div,.invoiceDesWrap div,.totalWrap div{font-size:14px!important}
+	.searchResult .employerDetail .content .viewBookBtnWrap .orangeBtn,.searchResult .employerDetail .content .viewBookBtnWrap .blueBtn{font-size:13px;width:119px}
+	.searchResult .employerDetail .content p{font-size:13px}
+	.searchResult .content .headWrap .colorOrange,.ShowingResult h3{font-size:14px}
+	.searchResult .content .headWrap div{font-size:15px}
+	.notificationWrap{width:234px}
+}
+
+@media screen and (max-width:360px){
+	.MobiletabWrap li a{font-size: 13px;}
+}

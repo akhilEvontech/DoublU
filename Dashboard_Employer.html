@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Dashboard Employer</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="stylesheet" type="text/css" href="css/media.css">
+      <link rel="stylesheet" href="css/owl.carousel.css" >
+       <link rel="stylesheet" href="css/owl.theme.default.css" >
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" >
+      <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900" rel="stylesheet"> 
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">  
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="js/owl.carousel.js" ></script>      
+      <script src="js/custom.js" ></script>
+   </head>
+   <body>
+     <header class="dashboardHeader">
+        <nav class="navbar navbar-expand-lg   container-1340">
+          <a class="navbar-brand mobile-dis-none" href="#"><img src="images/logo_Header.png"></a>
+           <h2 class="mobile-dis-block pageInfoMobile">Dashboard</h2>
+            <div class="rightSec mar-lft-auto mobile-dis-block">
+               <a href="#" class="pos-rel notiWrap"><span class="notiIcon spriteSheet"></span><span class="count">2</span></a>               
+                <button class="toggleBtn mar-lft-auto">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                 </button>
+            </div>           
+          <div class="collapse navbar-collapse d-flex align-items-center" >         
+          <div class="btnWrap">           
+            <button class="toggleBtn2 mar-lft-auto">
+              <img src="images/cross.png" alt="">
+            </button>
+          </div>
+           <div class="welcomeWrap ">
+                <p class="welcomeText">Welcome</p>              
+                <p>Evon Technologies</p>           
+           </div>
+            <ul class="navbar-nav ">             
+              <li class="nav-item ">
+                <a class="nav-link active" href="#">Dashboard</a>
+              </li>              
+              <li class="nav-item">
+                <a class="nav-link" href="#">Search</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#">Messages</a>
+              </li>
+            </ul> 
+            <ul class="navbar-nav signOutWrap">             
+              <li class="nav-item ">
+                <a class="nav-link " href="#">Shortlisted</a>
+              </li>              
+              <li class="nav-item">
+                <a class="nav-link" href="#">Manage Hiring Manager</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#">Edit My Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#">Signout</a>
+              </li>
+            </ul> 
+             <ul class="mobile-dis-block">
+                <li><a href="#">Privacy policy</a></li>
+            </ul>
+            <div class="rightSec mar-lft-auto mobile-dis-none">
+               <a href="#" class="pos-rel notiWrap"><span class="notiIcon spriteSheet"></span><span class="count">2</span></a>
+               <div class="droupDownWrap pos-rel">
+                 <div class="">
+                    Welcome, <span class="fontBold colorBlue">Evon Technologies</span>
+                    <div class="droupDownIconWrap">                        
+                        <span class="spriteSheet droupDownIcon"></span>
+                    </div>
+                 </div>
+               </div>
+            </div>
+          </div>
+        </nav>
+
+     </header>
+     <div class="acceptBookingWrap dashboardHiringManager">
+     	<div class="container-1340">
+     		 <div class="topFilterWrap">
+     		 	 <div class="row">
+     		 	 	<div class="col-xl-3 col-md-4">     		 	 		
+		                <div class="inputWrap pos-rel selectWrap">
+		                  <label>Display By</label>
+		                   <select>
+		                     <option>Define Range</option>
+		                   </select>
+		                    <span class="selectArrowWrap">                       
+                                <span class="downArrow spriteSheet"></span>
+                            </span>
+		                </div>
+     		 	 	</div>
+     		 	 	<div class="col-xl-3 col-md-4">     		 	 		
+		                <div class="inputWrap pos-rel">
+		                  <label>From</label>
+		                  <input placeholder="January 2018" class="bluePlaceholder " type="text">
+		                  <span class="calenderIconWrap">                   
+                            <span class="spriteSheet calendericon"></span>
+                          </span>
+		                </div> 
+     		 	 	</div>
+     		 	 	<div class="col-xl-3 col-md-4">     		 	 		
+		                <div class="inputWrap pos-rel">
+		                  <label>To</label>
+		                  <input placeholder="March 2018" class="bluePlaceholder " type="text">
+		                  <span class="calenderIconWrap">                   
+                            <span class="spriteSheet calendericon"></span>
+                          </span>
+		                </div> 
+     		 	 	</div>
+     		 	 	<div class="col-xl-3 col-md-6">     		 	 		
+		                <div class="inputWrap btnWrap pos-rel">
+		                   <button class="orangeBtn">Apply</button>
+		                   <button class="blueBtn">Reset</button>
+		                </div> 
+     		 	 	</div>
+     		 	 </div>
+     		 </div>
+     		 <div>
+     		 	<h2>Booking Summary</h2>
+     		 	<div class="bookingSummaryWrap">
+	     		 	<div class="row">
+	     		 		 <div class="col-lg-3 col-md-6 col-sm-6">
+	     		 		 	 <div class="orangeBg">
+	     		 		 	 	 <p class="number text-center">24</p>
+	     		 		 	 	 <p class="text text-center">Current Booking</p>
+	     		 		 	 </div>
+	     		 		 </div>
+	     		 		 <div class="col-lg-3 col-md-6 col-sm-6">
+	     		 		 	 <div class="orangeBg">
+	     		 		 	 	 <p class="number text-center">10</p>
+	     		 		 	 	 <p class="text text-center">Booking Pending Acceptance</p>
+	     		 		 	 </div>
+	     		 		 </div>
+	     		 		 <div class="col-lg-3 col-md-6 col-sm-6">
+	     		 		 	 <div class="blueBg">
+	     		 		 	 	 <p class="number text-center">$0</p>
+	     		 		 	 	 <p class="text text-center">Total Amount Invoiced</p>
+	     		 		 	 </div>
+	     		 		 </div>
+
+	     		 		 <div class="col-lg-3 col-md-6 col-sm-6">
+	     		 		 	 <div class="blueBg">
+	     		 		 	 	 <p class="number text-center">$50</p>
+	     		 		 	 	 <p class="text text-center">Total amount pending Invoice</p>
+	     		 		 	 </div>
+	     		 		 </div>
+	     		 	</div>     		 		
+     		 	</div>
+     		 </div>
+             
+     		 <div class="bookingWrap mobile-dis-none">
+     		 	<h3>Bookings</h3>
+     		 	<div>
+     		 		<ul class="tabs">
+     		 			<li><a href="#" >Active Bookings</a></li>
+     		 			<li><a href="#" class="active">Pending Acceptance</a></li>  
+     		 		</ul>
+     		 	</div>
+     		 	<div class="tableWrap tableResponsive dashboardEmployer">
+     		 		 <table>
+                      <thead>
+     		 		 	<tr>
+     		 		 		<th>Resource Name <span class="spriteSheet shortingIcon"></span></th>
+     		 		 		<th>Start Date <span class="spriteSheet shortingIcon"></span></th>
+     		 		 		<th>End Date <span class="spriteSheet shortingIcon"></span></th>
+                            <th>Hiring Manager <span class="spriteSheet shortingIcon"></span></th>
+     		 		 		<th>Total Billing <span class="infoBlueIcon spriteSheet"></span> <span class="spriteSheet shortingIcon"></span></th>
+     		 		 		<th>Actions </th>
+     		 		 	</tr>
+                        </thead>
+                        <tbody> 
+     		 		 	<tr>
+     		 		 		<td class="colorBlue">Christopher Ashton Kutcher</td>
+     		 		 		<td>10-January-2018</td>
+     		 		 		<td>16-February-2018</td>
+                            <td>Benazir Bhutto</td>
+     		 		 		<td>$2200</td>
+     		 		 		<td>
+                                 <div class="d-flex align-items-center">
+                                    <a href="#" class="textIcon spriteSheet"></a>
+                                    <a href="#" class="spriteSheet alertIcon mar-lft-auto"></a>                                 
+                                 </div>
+     		 		 		</td>
+     		 		 	</tr>
+                        <tr>
+                            <td class="colorBlue">Christopher Ashton Kutcher</td>
+                            <td>10-January-2018</td>
+                            <td>16-February-2018</td>
+                            <td>Benazir Bhutto</td>
+                            <td>$2200</td>
+                            <td>
+                                 <div class="d-flex align-items-center">
+                                    <a href="#" class="textIcon spriteSheet"></a>
+                                    <a href="#" class="spriteSheet alertIcon mar-lft-auto"></a>                                
+                                 </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="colorBlue">Christopher Ashton Kutcher</td>
+                            <td>10-January-2018</td>
+                            <td>16-February-2018</td>
+                            <td>Benazir Bhutto</td>
+                            <td>$2200</td>
+                            <td>
+                                 <div class="d-flex align-items-center">
+                                    <a href="#" class="textIcon spriteSheet"></a>
+                                    <a href="#" class="spriteSheet alertIcon mar-lft-auto"></a>                                
+                                 </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="colorBlue">Christopher Ashton Kutcher</td>
+                            <td>10-January-2018</td>
+                            <td>16-February-2018</td>
+                            <td>Benazir Bhutto</td>
+                            <td>$2200</td>
+                            <td>
+                                 <div class="d-flex align-items-center">
+                                    <a href="#" class="textIcon spriteSheet"></a>
+                                    <a href="#" class="spriteSheet alertIcon mar-lft-auto"></a>                                 
+                                 </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="colorBlue">Christopher Ashton Kutcher</td>
+                            <td>10-January-2018</td>
+                            <td>16-February-2018</td>
+                            <td>Benazir Bhutto</td>
+                            <td>$2200</td>
+                            <td>
+                                 <div class="d-flex align-items-center">
+                                    <a href="#" class="textIcon spriteSheet"></a>
+                                    <a href="#" class="spriteSheet alertIcon mar-lft-auto"></a>                                 
+                                 </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="colorBlue">Christopher Ashton Kutcher</td>
+                            <td>10-January-2018</td>
+                            <td>16-February-2018</td>
+                            <td>Benazir Bhutto</td>
+                            <td>$2200</td>
+                            <td>
+                                 <div class="d-flex align-items-center">
+                                    <a href="#" class="textIcon spriteSheet"></a>
+                                    <a href="#" class="spriteSheet alertIcon mar-lft-auto"></a>                                 
+                                 </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="colorBlue">Christopher Ashton Kutcher</td>
+                            <td>10-January-2018</td>
+                            <td>16-February-2018</td>
+                            <td>Benazir Bhutto</td>
+                            <td>$2200</td>
+                            <td>
+                                 <div class="d-flex align-items-center">
+                                    <a href="#" class="textIcon spriteSheet"></a>
+                                    <a href="#" class="spriteSheet alertIcon mar-lft-auto"></a>                                 
+                                 </div>
+                            </td>
+                        </tr>
+                        </tbody>
+     		 		 </table>
+     		 	</div>
+     		 	<div class="paginationWrap d-flex align-items-center mobile-dis-none">
+     		 		 <label>Showing 1 - 10 of 30</label>
+     		 		 <div class="mar-lft-auto">
+     		 		 	<ul class="pagination">
+     		 		 		<li class="page-item disabled">
+						      <span class="page-link"><span class="spriteSheet firstIcon"></span> First</span>
+						    </li>
+						    <li class="page-item disabled">
+						      <span class="page-link"><span class="spriteSheet prevIcon"></span>Previous</span>
+						    </li>
+						   
+						    <li class="page-item active">
+						      <span class="page-link">
+						       1
+						      </span>
+						    </li>
+						    <li class="page-item"><a class="page-link" href="#">2</a></li>
+						    <li class="page-item"><a class="page-link" href="#">3</a></li>
+						    <li class="page-item">
+						      <a class="page-link" href="#">Next <span class="spriteSheet nextIcon"></span></a>
+						    </li>
+						    <li class="page-item">
+						      <span class="page-link"> Last <span class="spriteSheet lastIcon"></span></span>
+						    </li>
+  						</ul>
+     		 		 </div>
+     		 	</div>
+     		 </div>
+
+                 <!-- View Bookings Button mobile -->
+                <div class="viewBookingBtn mobile-dis-block">
+                    <a href="pendingSceptanceMobile.html" >View Bookings <span></span></a>
+                </div>
+                <!-- end --> 
+     	</div>     
+     </div>
+
+        <footer class="mobile-dis-none">
+        <div class="container-1340 d-flex align-items-center">
+           <div class="logoWrap">
+             <a href="#"><img src="images/logo_small.png" alt=""></a>              
+           </div>
+           <div class="shareWrap mar-lft-auto">
+            <a href="">Privacy Policy</a>
+           </div>
+        </div>
+     </footer>
+             
+                
+     
+   </body>
+</html>

@@ -1,0 +1,3770 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+body {
+	padding: 0px;
+	margin: 0px;
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	background-color: #fff;
+}
+
+*, ::after, ::before {
+	box-sizing: border-box;
+}
+
+button {
+	cursor: pointer;
+}
+
+button:focus, a:focus {
+	outline: 0px !important;
+}
+
+a, a:hover {
+	text-decoration: none !important;
+}
+
+ul {
+	list-style: none;
+	padding: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+select {
+
+	/* for Firefox */
+	-moz-appearance: none;  /* for Chrome */
+	-webkit-appearance: none;
+}
+select:focus{
+	outline: none;
+}
+/* For IE10 */
+select::-ms-expand {
+	display: none;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+input,textarea{
+	 outline: none;    
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+input:focus,textarea:focus{
+	box-shadow: 0px 0px 0px 0px;
+	outline: 0;
+}
+.mar-tp-30{
+	margin-top: 60px;
+}
+.clearfix::after {
+	display: block;
+	clear: both;
+	content: ""
+}
+
+.pad-0 {
+	padding: 0px !important;
+}
+
+.mr-rt-0 {
+	margin-right: 0px !important;
+}
+
+.mr-bt-0 {
+	margin-bottom: 0px !important;
+}
+
+.mr-bt-25 {
+	margin-bottom: 25px!important;
+}
+
+.pos-rel {
+	position: relative;
+}
+
+.mar-lft-auto {
+	margin-left: auto;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.mar-tp-0 {
+	margin-top: 0px !important;
+}
+.pad-tp-0{
+	padding-top: 0px!important;
+}
+
+.container-1340 {
+	max-width: 1370px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: auto;
+}
+
+.spriteSheet {
+	background: url('../images/Sprite.png');
+	display: inline-block;
+	background-repeat: no-repeat;
+}
+
+.row {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin-right: -15px;
+	margin-left: -15px
+}
+
+.column-1 {
+	-ms-flex: 0 0 8.333333%;
+	flex: 0 0 8.333333%;
+	max-width: 8.333333%;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.column-2 {
+	-ms-flex: 0 0 16.666667%;
+	flex: 0 0 16.666667%;
+	max-width: 16.666667%;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.column-3 {
+	-ms-flex: 0 0 25%;
+	flex: 0 0 25%;
+	max-width: 25%;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.column-4 {
+	-ms-flex: 0 0 33.33%;
+	flex: 0 0 33.33%;
+	max-width: 33.33%;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.column-5 {
+	-ms-flex: 0 0 41.666667%;
+	flex: 0 0 41.666667%;
+	max-width: 41.666667%;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.column-6 {
+	-ms-flex: 0 0 50%;
+	flex: 0 0 50%;
+	max-width: 50%;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.column-7 {
+	-ms-flex: 0 0 58.333333%;
+	flex: 0 0 58.333333%;
+	max-width: 58.333333%;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.column-8 {
+	-ms-flex: 0 0 66.666667%;
+	flex: 0 0 66.666667%;
+	max-width: 66.666667%;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.column-9 {
+	-ms-flex: 0 0 75%;
+	flex: 0 0 75%;
+	max-width: 75%;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.column-10 {
+	-ms-flex: 0 0 83.333333%;
+	flex: 0 0 83.333333%;
+	max-width: 83.333333%;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.col-11 {
+	-ms-flex: 0 0 91.666667%;
+	flex: 0 0 91.666667%;
+	max-width: 91.666667%;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.column-12 {
+	-ms-flex: 0 0 100%;
+	flex: 0 0 100%;
+	max-width: 100%;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+	position: relative;
+	width: 100%;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px
+}
+
+.col-1 {
+	-ms-flex: 0 0 8.333333%;
+	flex: 0 0 8.333333%;
+	max-width: 8.333333%
+}
+
+.col-2 {
+	-ms-flex: 0 0 16.666667%;
+	flex: 0 0 16.666667%;
+	max-width: 16.666667%
+}
+
+.col-3 {
+	-ms-flex: 0 0 25%;
+	flex: 0 0 25%;
+	max-width: 25%
+}
+
+.col-4 {
+	-ms-flex: 0 0 33.333333%;
+	flex: 0 0 33.333333%;
+	max-width: 33.333333%
+}
+
+.col-5 {
+	-ms-flex: 0 0 41.666667%;
+	flex: 0 0 41.666667%;
+	max-width: 41.666667%
+}
+
+.col-6 {
+	-ms-flex: 0 0 50%;
+	flex: 0 0 50%;
+	max-width: 50%
+}
+
+.col-7 {
+	-ms-flex: 0 0 58.333333%;
+	flex: 0 0 58.333333%;
+	max-width: 58.333333%
+}
+
+.col-8 {
+	-ms-flex: 0 0 66.666667%;
+	flex: 0 0 66.666667%;
+	max-width: 66.666667%
+}
+
+.col-9 {
+	-ms-flex: 0 0 75%;
+	flex: 0 0 75%;
+	max-width: 75%
+}
+
+.col-10 {
+	-ms-flex: 0 0 83.333333%;
+	flex: 0 0 83.333333%;
+	max-width: 83.333333%
+}
+
+.col-11 {
+	-ms-flex: 0 0 91.666667%;
+	flex: 0 0 91.666667%;
+	max-width: 91.666667%
+}
+
+.col-12 {
+	-ms-flex: 0 0 100%;
+	flex: 0 0 100%;
+	max-width: 100%
+}
+
+.colorBlue {
+	color: #013d5a !important;
+}
+
+.fontBold {
+	font-weight: 700 !important;
+}
+
+.pad-lf-0 {
+	padding-left: 0px;
+}
+
+.pad-rt-0 {
+	padding-right: 0px;
+}
+
+.text-left {
+	text-align: left !important;
+}
+
+.justify-content-between {
+	-ms-flex-pack: justify;
+	justify-content: space-between
+}
+
+.colorGrey {
+	color: #858585 !important;
+}
+
+header .navbar {
+	background: #ffffff;
+	display: -ms-flexbox;
+	display: flex;
+	padding: 16px 15px;
+	-ms-flex-align: center;
+	align-items: center;
+	
+	padding-top: 9px;
+}
+
+header .navbar-nav .nav-link {
+	color: #1e1e1e;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	padding-bottom: 5px;
+}
+
+header .navbar-brand img {
+	width: 130px;
+}
+
+header .navbar-nav li {
+	margin-right: 30px;
+}
+
+header .navbar-nav li:last-child {
+	margin-right: 0px;
+}
+
+header .navbar-nav li {
+	display: inline-block;
+}
+
+footer {
+	background: #002639;
+	color: #fff;
+	padding-top: 18px;
+	padding-bottom: 18px;
+}
+
+footer a {
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+}
+
+.d-flex {
+	display: -ms-flexbox;
+	display: flex
+}
+
+.flex-wrap {
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap
+}
+
+.align-items-start {
+	-ms-flex-align: start;
+	align-items: flex-start
+}
+
+.align-items-end {
+	-ms-flex-align: end;
+	align-items: flex-end
+}
+
+.align-items-center {
+	-ms-flex-align: center;
+	align-items: center
+}
+
+.justify-content-center {
+	-ms-flex-pack: center;
+	justify-content: center
+}
+
+.PlaceHolderPage .getYourGigWrap .container-1340 {
+	background-image: url('../images/banner_image.png');
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	height: 350px;
+	background-size: 490px;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.PlaceHolderPage .getYourGigWrap {
+
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#02709e+0,013954+100&0.88+0,1+100 */
+	background: -moz-linear-gradient(top, rgba(2, 112, 158, 0.88) 0%, rgba(1, 57, 84, 1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(2, 112, 158, 0.88) 0%, rgba(1, 57, 84, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(2, 112, 158, 0.88) 0%, rgba(1, 57, 84, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e002709e', endColorstr='#013954', GradientType=0); /* IE6-9 */
+}
+
+.PlaceHolderPage .aboutSec .container-1340 {
+	background-image: url('../images/5.png');
+	background-repeat: no-repeat;
+	background-position: bottom;
+	padding-bottom: 90px;
+	background-size: 100%;
+}
+
+.PlaceHolderPage .getYourGigWrap h1 {
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 40px;
+	margin-bottom: 24px;
+	margin-top: 0px;
+}
+
+.PlaceHolderPage .getYourGigWrap p {
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	margin-bottom: 0px;
+	line-height: 1.6;
+}
+
+.PlaceHolderPage .getYourGigWrap .contentWrap {
+	max-width: 560px;
+}
+
+.PlaceHolderPage .talentWorkDeployWrap p {
+	color: #454545;
+	font-size: 24px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	margin-bottom: 2px;
+}
+
+.PlaceHolderPage .talentWorkDeployWrap h3 {
+	color: #111;
+	font-size: 40px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	margin-bottom: 30px;
+	margin-top: 0px;
+}
+
+.PlaceHolderPage .talentWorkDeployWrap a, .PlaceHolderPage .talentWorkDeployWrap button {
+	background: #f17235;
+	width: 150px;
+	display: inline-block;
+	color: #fff;
+	margin: auto;
+	text-align: center;
+	border-radius: 5px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	font-size: 16px;
+	padding: 13px 10px;
+	border: none;
+}
+
+.PlaceHolderPage .talentWorkDeployWrap .content {
+	-ms-flex: 0 0 33.33%;
+	flex: 0 0 33.33%;
+	max-width: 33.33%;
+	text-align: center;
+	margin-bottom: 145px;
+}
+
+.PlaceHolderPage .talentWorkDeployWrap {
+	padding-top: 0px;
+}
+
+.PlaceHolderPage .talentWorkDeployWrap a.comingSoonBtn, .PlaceHolderPage .talentWorkDeployWrap button.comingSoonBtn {
+	color: #f17235;
+	background: transparent;
+	border: 2px solid #f17235;
+}
+
+.sliderWrap .mindImage {
+	width: 134px ;
+	margin: auto;
+	margin-bottom: 0px;
+}
+
+.sliderWrap {
+	background: #fff;
+	padding-top: 60px;
+	padding-bottom: 50px;
+}
+
+.sliderWrap .feedback {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	color: #111;
+	font-size: 18px;
+	line-height: 1.8;
+	margin-top: 38px;
+}
+
+.sliderWrap .representive {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	color: #111;
+	font-size: 14px;
+	margin-top: 34px;
+}
+
+.sliderWrap .owl-theme .owl-dots .owl-dot.active span, .sliderWrap .owl-theme .owl-dots .owl-dot:hover span {
+	background: #f15a25;
+}
+
+.sliderWrap .owl-theme .owl-dots .owl-dot span {
+	background: #cacaca;
+	height: 15px;
+	width: 15px;
+}
+
+.sliderWrap  .owl-carousel .owl-nav .owl-prev {
+	float: left;
+	background: url('../images/Sprite.png') no-repeat -580px -19px !important;
+	width: 19px;
+	height: 30px;
+	display: inline-block;
+	font-size: 0px;
+}
+
+.sliderWrap  .owl-carousel .owl-nav .owl-next {
+	float: right;
+	background: url('../images/Sprite.png') no-repeat -609px -19px !important;
+	width: 19px;
+	height: 30px;
+	display: inline-block;
+	font-size: 0px;
+}
+
+.sliderWrap .owl-theme .owl-nav {
+	position: absolute;
+	width: 100%;
+	top: 30%;
+}
+
+.sliderWrap .owl-theme .owl-dots {
+	margin-top: 30px;
+}
+
+header .toggleBtn span {
+	background: #023b57;
+	width: 24px;
+	height: 3px;
+	display: block;
+	margin-bottom: 4px;
+}
+
+header .toggleBtn span:last-child {
+	margin-bottom: 0px;
+}
+
+header .toggleBtn, header .toggleBtn2 {
+	border: none;
+	background: transparent;
+	display: none;
+}
+
+header .LoginForm input[type ="text"],header .LoginForm input[type ="password"],header .LoginForm input[type ="email"] {
+	border: 1px solid #013d5a;
+	font-size: 14px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	color: #d5d5d5;
+	padding: 8px 10px;
+	border-radius: 3px;
+}
+
+header .LoginForm div {
+	padding-right: 20px;
+}
+
+header .LoginForm div:last-child {
+	padding-right: 0px;
+}
+
+input.greyPlaceholder::-webkit-input-placeholder, textarea.greyPlaceholder::-webkit-input-placeholder {
+
+	/* Chrome/Opera/Safari */
+	color: #cacaca;
+	opacity: 1;
+}
+
+input.greyPlaceholder::-moz-placeholder, textarea.greyPlaceholder::-moz-placeholder {
+
+	/* Firefox 19+ */
+	color: #cacaca;
+	opacity: 1;
+}
+
+input.greyPlaceholder:-ms-input-placeholder, textarea.greyPlaceholder:-ms-input-placeholder {
+
+	/* IE 10+ */
+	color: #cacaca;
+	opacity: 1;
+}
+
+input.greyPlaceholder:-moz-placeholder, textarea.greyPlaceholder:-moz-placeholder {
+
+	/* Firefox 18- */
+	color: #cacaca;
+	opacity: 1;
+}
+
+header .LoginForm a {
+	color: #013d5a;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 12px;
+	display: block;
+	-ms-flex: 0 0 100%;
+	flex: 0 0 100%;
+	max-width: 100%;
+	text-align: right;
+	margin-top: 10px;
+}
+
+header .LoginForm {
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	position: relative;
+	top: 18px;
+	margin-bottom: 15px;
+}
+
+header .LoginForm .loginBtn {
+	border: 2px solid #ef7624;
+	background: #ef7624;
+	color: #fff;
+	font-size: 14px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	padding: 7px 20px;
+	border-radius: 5px;
+}
+
+header .navbar-brand {
+	margin-right: 41px;
+}
+
+header .navbar-collapse {
+	width: 100%;
+}
+
+header .navbar-nav .nav-link.active {
+	border-bottom: 2px solid #ef7624;
+	color: #ef7624;
+}
+
+header.headerBeforeLogin .navbar-collapse {
+	width: auto;
+}
+
+/*header ul.navbar-nav {
+padding-top: 10px;
+}*/
+.PlaceHolderPage.contactUsPage .getYourGigWrap h1 {
+	margin-bottom: 0px;
+}
+
+.PlaceHolderPage.contactUsPage .getYourGigWrap .container-1340 {
+	background-image: url('../images/contact-us.png');
+	background-repeat: no-repeat;
+	background-position: right center;
+	height: 350px;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	align-items: center;
+	background-size: 400px;
+}
+
+.contactUsForm h2 {
+	font-size: 24px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	color: #111;
+	margin-bottom: 50px;
+	margin-top: 0px;
+}
+
+.contactUsForm .inputWrap label, .modal .inputWrap label {
+	display: block;
+	font-size: 13px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	color: #111;
+	margin-bottom: 11px;
+}
+
+.contactUsForm .inputWrap input, .contactUsForm .inputWrap textarea, .modal .inputWrap input, .modal .inputWrap textarea {
+	border: 1px solid #013d5a;
+	font-size: 14px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	color: #013d5a;
+	padding: 9px 18px;
+	border-radius: 3px;
+	width: 100%;
+}
+
+.contactUsForm .inputWrap textarea, .modal .inputWrap textarea {
+	height: 90px;
+	resize: none;
+}
+
+.contactUsForm .inputWrap {
+	margin-bottom: 36px;
+}
+
+.contactUsForm .submitBtn {
+	background: #ef7624;
+	border: none;
+	color: #fff;
+	font-size: 16px;
+	width: 160px;
+	margin: auto;
+	padding: 14px 5px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	border-radius: 5px;
+}
+
+.contactUsForm {
+	padding-top: 62px;
+	padding-bottom: 54px;
+}
+
+.callLocationWrap .mobileImage {
+	background-position: -390px -19px;
+	width: 85px;
+	height: 85px;
+}
+
+.callLocationWrap {
+	background: #013d5a;
+}
+
+.messageImage {
+	background-position: -295px -19px;
+	width: 85px;
+	height: 85px;
+}
+
+.locImage {
+	background-position: -485px -19px;
+	width: 85px;
+	height: 85px;
+}
+
+.callLocationWrap .spriteSheet {
+	margin-right: 30px;
+}
+
+.callLocationWrap {
+	padding: 18px 0px;
+}
+
+.callLocationWrap span {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	color: #fff;
+	line-height: 1.7;
+}
+
+footer .logoWrap {
+	margin-right: 30px;
+}
+
+footer .navWrap a {
+	margin-right: 35px;
+}
+
+#googleMap {
+	height: 375px;
+}
+
+.PlaceHolderPage.AboutUsPage .getYourGigWrap .container-1340 {
+	background-image: url('../images/about-us.png');
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-size: 400px;
+}
+
+.PlaceHolderPage.AboutUsPage .getYourGigWrap p {
+	max-width: 500px;
+}
+
+.AboutUsPage .ourMission p {
+	color: #111;
+	font-size: 14px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	text-align: center;
+	line-height: 1.7;
+}
+
+.AboutUsPage .ourMission h2 {
+	margin-top: 0px;
+	margin-bottom: 40px;
+	font-size: 24px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+}
+
+.AboutUsPage .ourMission {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.AboutUsPage .ourstory {
+	background: #f0f0f0;
+}
+
+.AboutUsPage .TheGig h3 {
+	color: #013d5a;
+	font-size: 20px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.AboutUsPage .TheGig {
+	padding: 55px 0px;
+}
+
+/*custom modal css*/
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 9; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0, 0, 0); /* Fallback color */
+	background-color: rgba(0, 0, 0, 0.7); /* Black w/ opacity */
+}
+
+.modal.show {
+	display: -ms-flexbox !important;
+	display: flex !important;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-ms-flex-align: center;
+	align-items: center;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+/* Modal Content */
+.modal-content {
+	background-color: #fefefe;
+	padding: 20px;
+	border: 1px solid #888;
+	max-width: 590px;
+	border-radius: 7px;
+	width: 100%;
+}
+
+/* The Close Button */
+.close {
+	color: #aaaaaa;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover, .close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/*end*/
+.signupModal h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	color: #111;
+	font-size: 20px;
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 34px;
+}
+
+.signupModal .modal-content {
+	padding-top: 30px;
+	padding-bottom: 40px;
+	padding-left: 50px;
+	padding-right: 50px;
+	max-width: 800px;
+}
+
+.signupModal .inputWrap {
+	margin-bottom: 20px;
+}
+
+.signupModal .inputWrap.mar-bt-25 {
+	margin-bottom: 24px;
+}
+
+.signupModal p {
+	color: #111;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+}
+
+.orangeBtn {
+	background: #ef7624;
+}
+
+.greyBtn {
+	background: #cacaca;
+}
+
+.signupModal input[type="button"], .signupModal input[type="submit"] {
+	border: none;
+	color: #fff;
+	font-size: 16px;
+	width: 160px;
+	margin: auto;
+	padding: 14px 5px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	border-radius: 5px;
+	display: inline-block;
+	margin-top: 20px;
+}
+
+.signupModal .orangeBtn {
+	margin-right: 20px !important;
+}
+
+.signupModal p {
+	font-weight: 500;
+	line-height: 1.6;
+}
+
+.secHeading {
+	font-size: 24px;
+	color: #111;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	margin-top: 0px;
+}
+
+.aboutSec p {
+	font-size: 19px;
+	color: #002639;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	line-height: 1.7;
+	padding: 0px 30px;
+}
+
+.aboutSec {
+	border-bottom: 2px solid #013d5a;
+	padding: 45px 0px;
+	padding-bottom: 0px;
+}
+
+.orangeBorderBtn {
+	color: #f17235;
+	background: transparent;
+	border: 2px solid #f17235;
+}
+
+.aboutSec a {
+	width: 120px;
+	text-align: center;
+	padding: 8px 0px;
+	display: inline-block;
+	border-radius: 3px;
+	font-size: 14px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	margin-top: 40px;
+}
+
+.aboutSec .secHeading {
+	margin-bottom: 45px;
+}
+
+.topServiceSlider .name {
+	color: #111;
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	margin-bottom: 6px;
+}
+
+.topServiceSlider .skill {
+	color: #111;
+	font-size: 14px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	margin-top: 0px;
+	line-height: 1.7;
+}
+
+.topServiceSlider  .owl-nav {
+	display: none;
+}
+
+.topServiceWrap {
+	padding: 45px 0px;
+	background: #f0f0f0;
+}
+
+.topServiceSlider .owl-theme .owl-dots .owl-dot.active span, .topServiceSlider .owl-theme .owl-dots .owl-dot:hover span {
+	background: #f15a25;
+}
+
+.topServiceSlider .owl-theme .owl-dots .owl-dot span {
+	background: #cacaca;
+	height: 15px;
+	width: 15px;
+}
+
+.topServiceSlider .owl-carousel .owl-item img {
+	width: 165px;
+	height: auto;
+	border-radius: 0px;
+	margin: auto;
+}
+
+.topServiceWrap .secHeading {
+	margin-bottom: 60px;
+}
+
+.WantToBecomeWrap span {
+	font-size: 20px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	color: #fff;
+}
+
+.WantToBecomeWrap {
+	background: #013d5a;
+	padding: 45px 0px;
+}
+
+.WantToBecomeWrap a {
+	color: #fff;
+	border: 2px solid #fff;
+	font-size: 18px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	width: 115px;
+	text-align: center;
+	padding: 10px;
+	border-radius: 5px;
+	margin-left: 24px;
+}
+
+.customerReviewsSec {
+	padding-top: 53px;
+	padding-bottom: 40px;
+}
+
+.customerReviewsSec .secHeading {
+	margin-bottom: 50px;
+}
+
+.customerReviewsSec .content {
+	padding-left: 30px;
+	padding-right: 30px;
+	border-right: 2px solid #013d5a;
+}
+
+.customerReviewsSec .owl-item:nth-child(3n) .content {
+	border-right: 0px solid #013d5a;
+}
+
+.topServiceSlider .owl-dots {
+	margin-top: 22px;
+}
+
+.PlaceHolderPage.howItWorks .getYourGigWrap .container-1340 {
+	background-image: url('../images/how-it-works.png');
+	background-repeat: no-repeat;
+	background-position: right center;
+	height: 350px;
+	background-size: 400px;
+}
+
+.forHirerWorkerWrap .hirertext {
+	color: #013d5a;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 40px;
+}
+
+.forHirerIcon {
+	background-position: -20px -19px;
+	width: 128px;
+	height: 137px;
+	vertical-align: middle;
+	margin-right: 40px;
+}
+
+.forHirerWorkerWrap .subHead {
+	color: #111;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	font-size: 16px;
+	margin-bottom: 18px;
+}
+
+.forHirerWorkerWrap p {
+	color: #111;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 1.7;
+	margin-bottom: 28px;
+}
+
+.forHirerWorkerWrap .forHirerWrap ul li, .forHirerWorkerWrap .forworkerWrap ul li {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	margin-bottom: 50px;
+	line-height: 1.5;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.forHirerWorkerWrap .forHirerWrap ul li {
+	color: #013d5a;
+}
+
+.forHirerWorkerWrap .userIcon {
+	background-position: -108px -176px;
+	width: 30px;
+	height: 30px;
+	-ms-flex: 0 0 30px;
+	flex: 0 0 30px;
+}
+
+.forHirerWorkerWrap .searchIcon {
+	background-position: -148px -176px;
+	width: 26px;
+	height: 34px;
+	-ms-flex: 0 0 26px;
+	flex: 0 0 26px;
+}
+
+.forHirerWorkerWrap  ul li span {
+	vertical-align: middle;
+	margin-right: 20px;
+}
+
+.forHirerWorkerWrap .starIcon {
+	background-position: -184px -176px;
+	width: 34px;
+	height: 32px;
+	-ms-flex: 0 0 34px;
+	flex: 0 0 34px;
+}
+
+.forHirerWorkerWrap .calenderIcon {
+	background-position: -228px -176px;
+	width: 34px;
+	height: 34px;
+	-ms-flex: 0 0 34px;
+	flex: 0 0 34px;
+}
+
+.forHirerWorkerWrap .dolorIcon {
+	background-position: -272px -176px;
+	width: 30px;
+	height: 34px;
+	-ms-flex: 0 0 30px;
+	flex: 0 0 30px;
+}
+
+.forHirerWorkerWrap .forHirerWrap a, .forHirerWorkerWrap .forworkerWrap a {
+	max-width: 154px;
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+	color: #fff;
+	text-align: center;
+	border-radius: 5px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	padding: 13px 10px;
+}
+
+.forHirerWorkerWrap .forHirerWrap a {
+	background: #013d5a;
+}
+
+.forHirerWorkerWrap .forworkerWrap a {
+	background: #ef7624;
+}
+
+.forHirerWorkerWrap  ul {
+	padding-top: 10px;
+}
+
+.forHirerWorkerWrap {
+	padding: 60px 0px;
+}
+
+.forHirerWorkerWrap .hirerImageTextWrap {
+	margin-bottom: 30px;
+}
+
+.forHirerWorkerWrap .forworkerWrap ul li {
+	color: #ef7624;
+}
+
+.forHirerWorkerWrap .workertext {
+	color: #ef7624;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 40px;
+}
+
+.forworkerIcon {
+	background-position: -158px -20px;
+	width: 127px;
+	height: 136px;
+	vertical-align: middle;
+	margin-right: 40px;
+}
+
+.orangeuserIcon {
+	background-position: -874px -19px;
+	width: 30px;
+	height: 30px;
+	-ms-flex: 0 0 30px;
+	flex: 0 0 30px;
+}
+
+.orangebellIcon {
+	background-position: -64px -176px;
+	width: 34px;
+	height: 33px;
+	-ms-flex: 0 0 34px;
+	flex: 0 0 34px;
+}
+
+.orangemessageIcon {
+	background-position: -20px -176px;
+	width: 34px;
+	height: 34px;
+	-ms-flex: 0 0 34px;
+	flex: 0 0 34px;
+}
+
+.bagIcon {
+	background-position: -958px -19px;
+	width: 34px;
+	height: 30px;
+	-ms-flex: 0 0 34px;
+	flex: 0 0 34px;
+}
+
+.orangedolorIcon {
+	background-position: -914px -19px;
+	width: 34px;
+	height: 34px;
+	-ms-flex: 0 0 34px;
+	flex: 0 0 34px;
+}
+
+.forHirerWrap {
+	padding-right: 30px;
+}
+
+.forworkerWrap {
+	padding-left: 30px;
+}
+
+header .droupDownWrap {
+	border: 1px solid #013d5a;
+	border-radius: 5px;
+	padding: 10px 15px;
+	color: #111;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	display: inline-block;
+}
+
+header .count {
+	background: #ef7624;
+	color: #fff;
+	height: 22px;
+	width: 22px;
+	display: inline-block;
+	text-align: center;
+	border-radius: 100%;
+	line-height: 1.2;
+	position: absolute;
+	right: -8px;
+	top: -7px;
+}
+
+header .notiWrap {
+	margin-right: 30px;
+	display: inline-block;
+	position: relative;
+	top: 11px;
+}
+
+header.dashboardHeader {
+	box-shadow: 0px 11px 19px 0px rgba(0, 0, 0, .2);
+}
+
+.upload-btn-wrapper {
+	position: relative;
+	overflow: hidden;
+	display: inline-block;
+	margin-bottom: 32px;
+}
+
+.upload-btn-wrapper input[type=file] {
+	font-size: 100px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0;
+}
+
+.upload-btn-wrapper .btn {
+	background: transparent;
+	border: none;
+}
+
+/*custom radio button*/
+.radioWrap [type="radio"]:checked, .radioWrap [type="radio"]:not(:checked) {
+	position: absolute;
+	left: -9999px;
+}
+
+.radioWrap [type="radio"]:checked + label, .radioWrap [type="radio"]:not(:checked) + label {
+	position: relative;
+	padding-left: 40px;
+	cursor: pointer;
+	line-height: 20px;
+	display: inline-block;
+	font-size: 14px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	color: #111;
+}
+
+.radioWrap [type="radio"]:checked + label:before, .radioWrap [type="radio"]:not(:checked) + label:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: -3px;
+	background: url('../images/Sprite.png') -379px -176px;
+	width: 25px;
+	height: 25px;
+}
+
+.radioWrap [type="radio"]:checked + label:after, .radioWrap [type="radio"]:not(:checked) + label:after {
+	content: '';
+	width: 12px;
+	height: 12px;
+	position: absolute;
+	background: url('../images/Sprite.png') -344px -176px;
+	width: 25px;
+	height: 25px;
+	border-radius: 100%;
+	-webkit-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+	left: 0;
+	top: -3px;
+}
+
+.radioWrap [type="radio"]:not(:checked) + label:after {
+	opacity: 0;
+	-webkit-transform: scale(0);
+	transform: scale(0);
+}
+
+.radioWrap [type="radio"]:checked + label:after {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+.radioWrap label {
+	margin-bottom: 0px !important;
+}
+
+/*end*/
+.inputWrap label {
+	display: block;
+	font-size: 14px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	color: #111;
+	margin-bottom: 11px;
+}
+
+.inputWrap input, .inputWrap textarea, .inputWrap select {
+	border: 1px solid #013d5a;
+	font-size: 14px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	color: #013d5a;
+	padding: 11px 18px;
+	border-radius: 3px;
+	width: 100%;
+	background: transparent;	
+	margin-bottom: 0px;
+	margin-bottom: 0px
+}
+
+.inputWrap select {
+	padding: 11px 18px;
+}
+
+.inputWrap, .custmCheckBox {
+	margin-bottom: 40px;
+}
+
+.border-bt-grey {
+	border-bottom: 2px solid #cacaca;
+}
+
+.profileWrap h4 {
+	color: #013d5a;
+	font-size: 18px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	margin-top: 0px;
+}
+
+.profileWrap h2 {
+	font-size: 24px;
+	color: #111;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	text-align: center;
+	margin-bottom: 56px;
+}
+
+.profileWrap .uploadText {
+	font-size: 14px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	color: #111;
+	margin-top: 34px;
+}
+
+.profileWrap .upload-btn-wrapper img {
+	height: 100px;
+	width: 100px;
+	border-radius: 100%;
+	border: 1px solid #013d5a;
+}
+
+.profileWrap .radioWrap {
+	padding-top: 10px;
+}
+
+/*custom checkboxes*/
+
+/* Base for label styling */
+.custmCheckBox [type="checkbox"]:not(:checked), .custmCheckBox [type="checkbox"]:checked {
+	position: absolute;
+	left: -9999px;
+}
+
+.custmCheckBox [type="checkbox"]:not(:checked) + label, .custmCheckBox [type="checkbox"]:checked + label {
+	position: relative;
+	padding-left: 40px;
+	cursor: pointer;
+	font-size: 14px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	color: #111;
+	margin-bottom: 0px;
+}
+
+/* checkbox aspect */
+.custmCheckBox [type="checkbox"]:not(:checked) + label:before, .custmCheckBox [type="checkbox"]:checked + label:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: -3px;
+	background: url('../images/Sprite.png') -440px -176px;
+	width: 26px;
+	height: 26px;
+	background-repeat: no-repeat;
+}
+
+/* checked mark aspect */
+.custmCheckBox [type="checkbox"]:not(:checked) + label:after, .custmCheckBox [type="checkbox"]:checked + label:after {
+	content: '';
+	position: absolute;
+	top: -3px;
+	left: 0;
+	font-size: 1.4em;
+	line-height: 0.8;
+	color: #09ad7e;
+	transition: all .2s;
+	background: url('../images/Sprite.png')-476px -176px;
+	width: 26px;
+	height: 26px;
+}
+
+/* checked mark aspect changes */
+.custmCheckBox [type="checkbox"]:not(:checked) + label:after {
+	opacity: 0;
+	transform: scale(0);
+}
+
+.custmCheckBox [type="checkbox"]:checked + label:after {
+	opacity: 1;
+	transform: scale(1);
+}
+
+/* disabled checkbox */
+.custmCheckBox [type="checkbox"]:disabled:not(:checked) + label:before, .custmCheckBox [type="checkbox"]:disabled:checked + label:before {
+	box-shadow: none;
+	border-color: #bbb;
+	background-color: #ddd;
+}
+
+.custmCheckBox [type="checkbox"]:disabled:checked + label:after {
+	color: #999;
+}
+
+.custmCheckBox [type="checkbox"]:disabled + label {
+	color: #aaa;
+}
+
+/*end*/
+.orangeBtn, .blueBtn {
+	width: 150px;
+	display: inline-block;
+	color: #fff;
+	margin: auto;
+	text-align: center;
+	border-radius: 5px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	font-size: 16px;
+	padding: 13px 10px;
+	border: none;
+}
+
+.orangeBtn, .orangeBg {
+	background: #ef7624;
+}
+
+.blueBtn, .blueBg {
+	background: #013d5a;
+}
+
+.colorOrange {
+	color: #f17235;
+}
+
+.profileWrap h5.colorOrange {
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	margin-top: 0px;
+}
+
+.profileWrap h5.colorOrange span {
+	color: #111;
+	font-weight: 300;
+	margin-left: 3px;
+}
+
+.profileWrap .border-bt-grey {
+	padding-top: 60px;
+	padding-bottom: 20px;
+}
+
+.iconfirmWrap {
+	padding-top: 45px;
+	padding-bottom: 45px;
+}
+
+.profileWrap  .orangeBtn {
+	margin-top: 26px
+}
+
+.profileWrap textarea {
+	height: 112px;
+	resize: none;
+}
+
+.blueBrowseBtn {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	margin-bottom: 0px;
+}
+
+.blueBrowseBtn button.btn {
+	background: #013d5a;
+	border: none;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	height: 100%;
+	color: #fff;
+	font-size: 14px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	padding: 12px 14px;
+}
+
+input.disable {
+	background: #e0e0e0;
+}
+
+.topFilterWrap .orangeBtn, .topFilterWrap .blueBtn {
+	max-width: 47%;
+	width: 100%;
+	font-size: 16px;
+}
+
+.topFilterWrap .orangeBtn {
+	margin-right: 4.5%;
+}
+
+.topFilterWrap .btnWrap {
+	padding-top: 27px;
+}
+
+.acceptBookingWrap {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.acceptBookingWrap .inputWrap input, .acceptBookingWrap .inputWrap textarea, .acceptBookingWrap .inputWrap select {
+	font-weight: 700;
+}
+
+input.bluePlaceholder::-webkit-input-placeholder, textarea.bluePlaceholder::-webkit-input-placeholder {
+
+	/* Chrome/Opera/Safari */
+	color: #013d5a;
+	opacity: 1;
+}
+
+input.bluePlaceholder::-moz-placeholder, textarea.bluePlaceholder::-moz-placeholder {
+
+	/* Firefox 19+ */
+	color: #013d5a;
+	opacity: 1;
+}
+
+input.bluePlaceholder:-ms-input-placeholder, textarea.bluePlaceholder:-ms-input-placeholder {
+
+	/* IE 10+ */
+	color: #013d5a;
+	opacity: 1;
+}
+
+input.bluePlaceholder:-moz-placeholder, textarea.bluePlaceholder:-moz-placeholder {
+
+	/* Firefox 18- */
+	color: #013d5a;
+	opacity: 1;
+}
+
+.bookingSummaryWrap .number {
+	font-size: 60px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	color: #fff;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.bookingSummaryWrap .text {
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	color: #fff;
+	margin-bottom: 0px;
+	margin-top: 10px;
+}
+
+.bookingSummaryWrap .orangeBg, .bookingSummaryWrap .blueBg {
+	border-radius: 10px;
+	padding-top: 28px;
+	padding-bottom: 28px;
+	min-height: 180px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.profileWrap h2 {
+	font-size: 22px;
+	color: #111;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	margin-top: 0px;
+}
+
+.acceptBookingWrap h2 {
+	font-size: 18px;
+	color: #111;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	margin-top: 0px;
+	margin-bottom: 35px;
+}
+
+.acceptBookingWrap h3 {
+	font-size: 18px;
+	color: #111;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	margin-top: 0px;
+	margin-top: 45px;
+	margin-bottom: 30px;
+}
+
+.acceptBookingWrap h3.mar-tp-0 {
+	margin-top: 0px;
+}
+
+.bookingWrap ul.tabs {
+	display: -ms-flexbox;
+	display: flex;
+	max-width: 530px;
+	margin-bottom: 30px;
+	border-radius: 5px;
+	border: 1px solid #013d5a;
+}
+
+.bookingWrap ul.tabs li {
+	-ms-flex: 0 0 33.333333%;
+	flex: 0 0 33.333333%;
+	max-width: 33.333333%
+}
+
+.bookingWrap ul.tabs li a {
+	display: block;
+	width: 100%;
+	text-align: center;
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	padding: 10px 0px;
+	color: #013d5a;
+	border-right: 1px solid #013d5a;
+}
+
+.bookingWrap ul.tabs li:last-child a {
+	border-right: 0px;
+}
+
+.bookingWrap ul.tabs li a.active {
+	background: #013d5a;
+	color: #fff;
+}
+
+.bookingWrap table {
+	width: 100%;
+	border-collapse: collapse;
+	border: 1px solid #cacaca;
+}
+
+.bookingWrap table th {
+	text-align: left;
+	color: #111;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	font-size: 16px;
+	padding: 20px 15px;
+	background: #e0e0e0;
+	border-right: 1px solid #cacaca;
+}
+
+.bookingWrap table td {
+	color: #858585;
+	padding: 20px 15px;
+	font-size: 14px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	border-right: 1px solid #cacaca;
+}
+
+.bookingWrap table  th:last-child, .bookingWrap table  td:last-child {
+	border-right: 0px;
+}
+
+.bookingWrap table tr:nth-child(even) {
+	background: #f0f0f0;
+}
+
+.pagination {
+	display: -ms-flexbox;
+	display: flex;
+	border: 1px solid #cacaca;
+	padding: 0px;
+	border-radius: 5px;
+}
+
+.pagination .disabled .page-link {
+	color: #cacaca;
+}
+
+.pagination  .page-link {
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	color: #013d5a;
+	padding-left: 7px;
+	padding-right: 7px;
+	margin-left: 8px;
+	margin-right: 8px;
+	display: inline-block;
+	padding-bottom: 12px;
+}
+
+.pagination .active .page-link {
+	color: #ef7624;
+	border-bottom: 2px solid #ef7624;
+}
+
+.pagination li {
+	padding-top: 12px;
+}
+
+.paginationWrap label {
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+}
+
+.paginationWrap {
+	padding-top: 40px;
+}
+
+.breadcumWrap {
+	color: #858585;
+	font-size: 14px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	background: #ededed;
+	padding: 9px 0px 20px 0px;
+	margin-top: 15px;
+}
+
+.breadcumWrap .active {
+	color: #013d5a;
+}
+
+.bookingDetailWrap .detail {
+	border-bottom: 1px solid #cacaca;
+	padding: 16px 20px;
+	height: 100%;
+}
+
+.bookingDetailWrap {
+	border: 1px solid #cacaca;
+	border-radius: 5px;
+	border-bottom: 0px;
+}
+
+.bookingDetailWrap .detail.boder-rt {
+	border-right: 1px solid #cacaca;
+}
+
+.bookingDetailWrap label {
+	display: block;
+	font-size: 14px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	color: #111;
+	margin-bottom: 11px;
+}
+
+.bookingDetailWrap p, .bookingDetailWrap .pricingWrap div, .bookingDetailWrap .dateDetail div {
+	margin: 0px;
+	color: #858585;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+}
+
+.bookingDetailWrap .pricingWrap div span {
+	color: #111;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	margin-left: 7px;
+	display: inline-block;
+}
+
+.bookingDetailWrap .pricingWrap div {
+	margin-right: 30px;
+}
+
+.bookingDetailWrap .dateDetail div {
+	margin-right: 40px;
+}
+
+.bookingDetailWrap .fontBold {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+}
+
+.bookingDetailWrap .description p {
+	color: #111;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	line-height: 1.6
+}
+
+.colorOrange {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+}
+
+.bookingWrap .invoiceDetailTable td {
+	color: #111;
+	font-size: 14px;
+}
+
+.bookingWrap .invoiceDetailTable table th {
+	font-size: 14px;
+}
+
+.availableCurrentWrap .orangeBtn, .availableCurrentWrap .blueBtn {
+	width: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.availableCurrentWrap .orangeBtn {
+	margin-right: 25px;
+}
+
+.availableCurrentWrap .availbale, .availableCurrentWrap .currentBook, .availableCurrentWrap .unavailable, .availableCurrentWrap .withdrawn {
+	border: 1px solid #858585;
+	width: 28px;
+	height: 28px;
+	display: inline-block;
+	border-radius: 3px;
+	vertical-align: middle;
+	margin-right: 10px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	color: #111;
+}
+
+.availableCurrentWrap .currentBook {
+	background: #3181e5;
+}
+
+.availableCurrentWrap .unavailable {
+	background: #e0e0e0;
+}
+
+.availableCurrentWrap .withdrawn {
+	background: #f15a25;
+}
+
+.availableCurrentWrap .d-flex > div {
+	margin-right: 50px;
+}
+
+.scheduleWrap {
+	padding: 40px 20px;
+	border: 1px solid #cacaca;
+	border-radius: 5px;
+}
+
+.acceptBookingWrap .scheduleWrap h3 {
+	margin-top: 0px;
+}
+
+.acceptBookingWrap .calenderWrap {
+	padding-top: 40px;
+}
+
+.tableWrap {
+	border-radius: 5px;
+	overflow: auto;
+}
+
+.markCompensatory .modal-content {
+	max-width: 480px;
+}
+
+.markCompensatory p {
+	max-width: 350px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.signupModal.markCompensatory .modal-content {
+	padding-bottom: 40px;
+}
+
+.signupModal.markCompensatory h2 {
+	margin-bottom: 24px;
+}
+
+.markCompensatory .inputWrap {
+	margin-bottom: 10px;
+}
+
+.markCompensatory textarea {
+	height: 160px !important;
+}
+
+.markCompensatory .viewMessageAnchor {
+	margin-top: 40px;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 600;
+	font-family: 'Montserrat', sans-serif;
+}
+
+#sendMessage .modal-content {
+	max-width: 600px;
+}
+
+.modal-720 .modal-content {
+	max-width: 814px;
+}
+
+.invoiceContentWrap, .totalWrap {
+	border: 1px solid #cacaca;
+	margin-bottom: 20px;
+	border-radius: 5px;
+}
+
+.totalWrap {
+	padding: 0px;
+}
+.totalBillInfo{
+	background: #f0f0f0;
+}
+
+.invoiceDesWrap {
+	border: 1px solid #cacaca;
+	border-radius: 5px;
+}
+
+.invoiceContentWrap p, .invoiceDesWrap p, .totalWrap p, .invoiceContentWrap div, .invoiceDesWrap div, .totalWrap div {
+	margin-bottom: 0px;
+	margin-top: 0px;
+	color: #858585;
+	font-size: 14px;
+	font-weight: 500;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.invoiceContentWrap p.fontBold, .invoiceDesWrap p.fontBold, .totalWrap p.fontBold, .invoiceDesWrap table td {
+	font-weight: 700;
+}
+
+.invoiceContentWrap .border-tp-grey {
+	border-top: 1px solid #cacaca;
+}
+
+.invoiceDesWrap table th {
+	background: #f0f0f0;
+	text-align: left;
+	color: #858585;
+	font-size: 14px;
+	font-weight: 500;
+	font-family: 'Montserrat', sans-serif;
+	padding: 15px 20px;
+}
+
+.invoiceDesWrap table td {
+	padding: 20px;
+}
+
+.invoiceDesWrap {
+	margin-bottom: 20px;
+}
+
+.totalWrap div {
+	color: #111;
+	margin-bottom: 10px;
+}
+
+.invoiceContentWrap .detailWrap {
+	padding: 10px 20px;
+}
+
+.invoiceContentWrap {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.colorBlack {
+	color: #111 !important;
+}
+
+.signupModal.modal-720 .modal-content {
+	padding-right: 40px;
+	padding-left: 40px;
+}
+
+.invoiceDesWrap table th.des, .invoiceDesWrap table th.rate, .invoiceDesWrap table th.bill {
+	width: 22%;
+}
+
+.invoiceDesWrap table th.des {
+	width: 34%;
+}
+
+#ViewInvoice .mar-lft-auto,#generateQuotation .mar-lft-auto{
+	margin-bottom: 34px;
+}
+
+.bookingWrap ul.tabs.monthsTab li {
+	-ms-flex: 0 0 25%;
+	flex: 0 0 25%;
+	max-width: 25%;
+}
+
+.bookingWrap ul.tabs.monthsTab li:nth-child(2) a {
+	border-right: none;
+}
+
+.buttonGrey {
+	background: #cacaca;
+}
+
+.weekdaysWrap button {
+	border: none;
+	color: #fff;
+	border-radius: 5px;
+	font-size: 16px;
+	padding: 9px 20px;
+	font-weight: 600;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.weekdaysWrap .custmCheckBox {
+	display: inline-block;
+	margin-bottom: 0px;
+	margin-right: 50px;
+}
+
+.bookingWrap ul.tabs.monthsTab {
+	display: inline-flex;
+	display: -webkit-inline-flex;
+	display: -ms-inline-flexbox;
+	width: 530px;
+}
+
+.scheduleWrap .tabWeekWrap {
+	margin-bottom: 40px;
+}
+
+.bookingWrap ul.tabs.monthsTab {
+	margin-bottom: 0px;
+}
+
+.talentWorkDeployWrap .talentWrap {
+	background: #fffaf0;
+	-ms-flex: 0 0 50%;
+	flex: 0 0 50%;
+	max-width: 50%;
+	text-align: right;
+	padding-right: 170px;
+	padding-top: 30px;
+	padding-bottom: 34px;
+}
+
+.talentWorkDeployWrap .workWrap {
+	background: #f0f0f0;	
+	-ms-flex: 0 0 50%;
+	flex: 0 0 50%;
+	max-width: 50%;
+	padding-left: 170px;
+	padding-top: 30px;
+	padding-bottom: 34px;
+}
+
+.talentWorkDeployWrap .talentImage {
+	background: url('../images/talent.png');
+	background-size: 200px;
+	height: 160px;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.talentWorkDeployWrap .workImage {
+	background: url('../images/work1.png');
+	background-size: 200px;
+	height: 160px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.talentWorkDeployWrap .talentWrap > div {
+	max-width: 339px;
+	text-align: center;
+	float: right;
+	width: 100%;
+}
+
+.talentWorkDeployWrap .workWrap > div {
+	max-width: 388px;
+	text-align: center;
+	width: 100%;
+}
+
+.talentWorkDeployWrap .talentWrap:hover, .talentWorkDeployWrap .workWrap:hover {
+	background: #ef7624;
+}
+
+.talentWorkDeployWrap .talentWrap:hover p, .talentWorkDeployWrap .workWrap:hover p {
+	color: #fff;
+}
+
+.talentWorkDeployWrap .talentWrap:hover .talentImage {
+	background: url('../images/talent2.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 200px;
+}
+
+.talentWorkDeployWrap .workWrap:hover .workImage {
+	background: url('../images/work2.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 200px;
+}
+
+.paymentWrap .bookingWrap ul.tabs li a {
+	font-size: 14px;
+}
+
+.paymentWrap .bookingWrap table th, .paymentWrap .bookingWrap table td {
+	font-size: 14px;
+}
+
+.acceptBookingWrap.paymentWrap h3 {
+	margin-top: 0px;
+}
+
+.calendericon {
+	background-position: -312px -176px;
+	width: 22px;
+	height: 25px;
+}
+
+.calenderIconWrap {
+	background-color: #013d5a;
+	border: none;
+	padding: 6px 12px;
+	position: absolute;
+	right: 1px;
+	bottom: 0px;
+}
+
+.selectWrap .selectArrowWrap .downArrow, header .droupDownIcon {
+	background-position: -414px -176px;
+	width: 16px;
+	height: 8px;
+}
+
+.selectWrap .selectArrowWrap {
+	background-color: #013d5a;
+	border: none;
+	padding: 11px 12px;
+	position: absolute;
+	right: 0px;
+	pointer-events: none;
+	bottom: 0px;
+	border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+@supports (-moz-appearance:none) {
+    .selectWrap .selectArrowWrap {padding: 12px 12px; } 
+}
+@media all and (-ms-high-contrast:none)
+     {
+     .selectWrap .selectArrowWrap {padding: 12px 12px; } /* IE10 */
+     *::-ms-backdrop, .selectWrap .selectArrowWrap {padding: 12px 12px; } /* IE11 */
+}
+.notiIcon {
+	background-position: -512px -176px;
+	width: 29px;
+	height: 35px;
+}
+
+.flagImg {
+	position: absolute;
+	left: 24px;
+	top: 50%;transform: translateY(-50%);
+	display: block;
+}
+
+.flagImg img{
+	display:block;
+}
+.inputWrap .countryCode {
+	padding-left: 60px;
+	height: 100%;
+}
+
+.mobile-dis-block, .signOutWrap, .welcomeWrap {
+	display: none;
+}
+
+.droupDownIconWrap {
+	background-color: #013d5a;
+	border: none;
+	padding: 10px 12px;
+	position: absolute;
+	right: 0px;
+	pointer-events: none;
+	top: 0px;
+}
+
+header .droupDownWrap>div {
+	padding-right: 60px;
+}
+
+.firstIcon {
+	background-position: -673px -176px;
+	width: 15px;
+	height: 15px;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+
+.prevIcon {
+	background-position: -698px -176px;
+	width: 9px;
+	height: 15px;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+
+.lastIcon {
+	background-position: -736px -176px;
+	width: 16px;
+	height: 15px;
+	vertical-align: middle;
+	margin-left: 10px;
+}
+
+.nextIcon {
+	background-position: -717px -176px;
+	width: 9px;
+	height: 15px;
+	vertical-align: middle;
+	margin-left: 10px;
+}
+
+.shortingIcon {
+	background-position: -551px -176px;
+	width: 12px;
+	height: 22px;
+	vertical-align: middle;
+	float: right;
+	cursor: pointer;
+}
+
+.chatIcon {
+	background-position: -573px -176px;
+	width: 30px;
+	height: 25px;
+	margin-right: 20px;
+	vertical-align: middle;
+}
+
+.textIcon {
+	background-position: -214px -230px;
+	width: 25px;
+	height: 25px;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+
+.alertIcon {
+	background-position: -643px -176px;
+	width: 20px;
+	height: 19px;
+	vertical-align: middle;
+}
+
+.messageIcon {
+	background-position: -573px -176px;
+	width: 30px;
+	height: 25px;
+	vertical-align: middle;
+	margin-right: 10px;
+	border: none;
+}
+
+.tickIcon {
+	background-position: -924px -176px;
+	width: 26px;
+	height: 26px;
+	vertical-align: middle;
+}
+
+table .crossIcon,.bookingDetailInfo .crossIcon {
+	background-position: -960px -176px;
+	width: 25px;
+	height: 25px;
+	vertical-align: middle;
+	border: none;
+}
+
+.calenderWrap img {
+	max-width: 100%;
+}
+
+.viewInvoiceOrange span {
+	background-position: -214px -230px;
+	width: 25px;
+	height: 25px;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+
+.greenInvoice {
+	background-position: -794px -176px;
+	width: 22px;
+	height: 25px;
+	margin-right: 10px;
+}
+
+.activeDolorIcon {
+	background-position: -858px -176px;
+	width: 23px;
+	height: 23px;
+}
+
+.InactiveDolorIcon {
+	background-position: -826px -176px;
+	width: 22px;
+	height: 25px;
+}
+
+.InactiveDolorIcon {
+	background-position: -891px -176px;
+	width: 23px;
+	height: 23px;
+}
+
+.InactiveInvoice {
+	margin-right: 10px;
+	background-position: -826px -176px;
+	width: 22px;
+	height: 25px;
+}
+
+.orangeBtn.acceptBtn {
+	margin-right: 15px;
+}
+
+.invoiceDetailTable button {
+	border: none;
+	background: transparent;
+}
+
+.bookingWrap ul.tabs li a {
+	height: 100%;
+}
+
+.viewInvoiceOrange {
+	border: none;
+	background: transparent;
+	padding: 0px;
+}
+
+.paymentTable .d-flex {
+	flex-wrap: wrap;
+}
+
+.gap {
+	height: 200px;
+}
+
+.bookingWrap .detail img {
+	border: 1px solid #013d5a;
+	border-radius: 100%;
+	vertical-align: middle;
+	margin-right: 20px;
+}
+
+.EmployerCompleteprofile .custmCheckBox [type="checkbox"]:not(:checked) + label, .EmployerCompleteprofile .custmCheckBox [type="checkbox"]:checked + label {
+	font-size: 16px;
+}
+
+.EmployerCompleteprofile .custmCheckBox {
+	margin-top: 10px;
+}
+
+.EmployerCompleteprofile {
+	padding-bottom: 60px;
+}
+
+.dashboardHiringManager .bookingSummaryWrap .orangeBg, .dashboardHiringManager .bookingSummaryWrap .blueBg {
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+.dashboardHiringManager .bookingWrap ul.tabs li {
+	-ms-flex: 0 0 50%;
+	flex: 0 0 50%;
+	max-width: 50%;
+}
+
+.dashboardHiringManager  .bookingWrap ul.tabs {
+	max-width: 390px;
+}
+
+.dashboardHiringManager .viewBookingBtn a, .viewBookingBtn a {
+	display: block;
+	color: #111;
+	font-size: 16px;
+	font-weight: 600;
+	border: 2px solid #111;
+	padding: 12px;
+	border-radius: 5px;
+	margin-top: 15px;
+}
+
+header .pageInfoMobile {
+	color: #ef7624;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-size: 17px;
+	padding-left: 14px;
+}
+
+.MobiletabWrap ul {
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, .2);
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-bottom: 20px;
+}
+
+.MobiletabWrap li {
+	-ms-flex: 0 0 50%;
+	flex: 0 0 50%;
+	max-width: 50%;
+}
+
+.MobiletabWrap li a {
+	color: #013d5a;
+	font-weight: 600;
+	text-align: center;
+	display: block;
+	font-size: 16px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.MobiletabWrap li a.active {
+	border-bottom: 2px solid #013d5a;
+}
+
+.noBoxshadow {
+	box-shadow: 0 0 0 0 !important;
+}
+
+.MobiletabWrap .bookingDetailInfo .heading {
+	background: #e0e0e0;
+	border-bottom: 1px solid #cacaca;
+}
+
+.MobiletabWrap .bookingDetailInfo .d-flex div {
+	-ms-flex: 0 0 50%;
+	flex: 0 0 50%;
+	max-width: 50%;
+	padding: 12px 10px;
+	font-size: 14px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+}
+
+.MobiletabWrap .chatIcon, .MobiletabWrap .textIcon {
+	margin-right: 10px;
+}
+
+.MobiletabWrap .bookingDetailInfo {
+	border: 1px solid #e0e0e0;
+	margin-bottom: 20px;
+}
+
+.MobiletabWrap .bookingDetailInfo .d-flex:last-child .heading {
+	border-bottom: 0px;
+}
+
+.MobiletabWrap .bookingDetailInfo .d-flex:nth-child(even) .detail {
+	background: #f0f0f0;
+}
+
+.modal-btn {
+	border: none;
+}
+
+.rightArrow {
+	background-position: -717px -176px;
+	width: 9px;
+	height: 15px;
+	vertical-align: middle;
+	margin-left: 8px;
+}
+
+.redDolorIcon {
+	background-position: -50px -230px;
+	width: 23px;
+	height: 23px;
+}
+
+.rescheduleIcon {
+	background-position: -83px -230px;
+	width: 22px;
+	height: 25px;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+
+.bookingDetailWrap .dateDetail .rescheduleWrap {
+	margin-right: 0px;
+	margin-left: auto;
+}
+
+.invoiceHeadingWrap div span {
+	font-size: 14px;
+	color: #111;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	margin-top: 45px;
+	margin-bottom: 30px;
+	display: inline-block;
+}
+
+.invoiceHeadingWrap div span:first-child {
+	margin-right: 20px;
+}
+
+.max-100 {
+	max-width: 100% !important;
+}
+
+.bookingDetailInfo .max-100 {
+	padding: 0px !important;
+	text-align: right;
+}
+
+.bookingDetailInfo .mar-lft-auto.iconsWrap {
+	padding: 0px !important;
+}
+
+.sortModal label {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	color: #111;
+	font-size: 14px;
+	margin-bottom: 18px;
+	display: block;
+}
+
+.sortModal h2 {
+	margin-top: 0px;
+}
+
+.sortModal .radioWrap [type="radio"]:checked + label, .sortModal .radioWrap [type="radio"]:not(:checked) + label {
+	color: #858585;
+}
+
+.sortModal .orangeBtn {
+	margin-right: 20px;
+}
+
+.sortModal .orangeBtn, .sortModal .blueBtn {
+	width: 120px;
+}
+
+.sortingModal {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	background-color: transparent;
+}
+
+.sortingModal img {
+	height: 40px
+}
+
+.sortModal .btnWrap {
+	margin-top: 10px;
+}
+
+.hiringManager label {	
+	-ms-flex: 0 0 100%;
+	flex: 0 0 100%;
+	max-width: 100%;
+}
+
+.thankyouWrap p {
+	color: #858585;
+	font-size: 14px;
+	font-weight: 500;
+	font-family: 'Montserrat', sans-serif;
+	margin-top: 0px;
+	margin-bottom: 5px;
+}
+
+.thankyouWrap {
+	padding-bottom: 20px;
+}
+
+.invoiceMobile {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.searchEmployer .container-1340 {
+	border: 1px solid #cacaca;
+	padding-bottom: 60px;
+}
+
+.searchEmployer {
+	padding-top: 60px;
+}
+
+.searchEmployerContent h3 {
+	margin-bottom: 25px;
+	font-weight: 600;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.searchEmployerContent {
+	padding: 10px 10px 0px 10px;
+}
+
+.profileWrap .searchEmployerContent .orangeBtn {
+	margin-top: 0px;
+}
+
+.infoBlueIcon {
+	background-position: -186px -230px;
+	width: 18px;
+	height: 18px;
+	vertical-align: middle;
+}
+
+.viewBookingBtn a span {
+	background: url(../images/forword_2.png);
+	display: inline-block;
+	width: 20px;
+	background-size: 100% 100%;
+	height: 20px;
+	vertical-align: middle;
+	float: right;
+}
+
+.backBtn img {
+	height: 20px;
+}
+
+.totalInvoiced {
+	font-size: 14px;
+	color: #111;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	display: inline-block;
+	width: 100%;
+}
+
+.privacyModal .modal-content {
+	max-width: 850px;
+	font-family: 'Montserrat', sans-serif;
+	position: relative;
+}
+
+.privacyModal p, .privacyModal li {
+	color: #111;
+	font-size: 14px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	line-height: 1.7;
+	margin-bottom: 20px;
+}
+
+.privacyModal .bold {
+	font-weight: 700;
+}
+
+.privacyModal h3 {
+	font-size: 18px;
+}
+
+.privacyModal h2 {
+	font-size: 22px;
+	margin-top: 0px;
+}
+
+.privacyModal h4 {
+	font-size: 16px;
+	margin-bottom: 40px;
+}
+
+.privacyModal li {
+	list-style: disc;
+	margin-bottom: 10px;
+}
+
+.privacyModal ul {
+	padding-left: 15px;
+}
+
+.searchCandidate select {
+	width: 100%;
+	background: #fff;
+	border: 1px solid #cacaca;
+	padding: 15px;
+	font-size: 22px;
+	color: #111;
+	border-radius: 5px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+}
+
+.searchResult {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.searchCandidate {
+	margin-bottom: 60px;
+}
+
+.searchCandidate .downArrowWhite span {
+	background-position: -414px -176px;
+	width: 16px;
+	height: 8px;
+}
+
+.searchCandidate .downArrowWhite {
+	background: #111111;
+	display: inline-block;
+	border-radius: 100%;
+	height: 35px;
+	width: 35px;
+	text-align: center;
+	line-height: 2;
+	position: absolute;
+	right: 20px;
+	top: 14px;
+}
+
+.ShowingResult h3 {
+	color: #013d5a;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	font-size: 18px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.ShowingResult .mar-lft-auto .sortByText {
+	color: #111;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	font-size: 16px;
+	margin-right: 10px;
+}
+
+.ShowingResult .mar-lft-auto select {
+	border: 1px solid #cacaca;
+	background: #fff;
+	padding: 10px 20px;
+	width: 155px;
+	border-radius: 5px;
+	color: #013d5a;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	font-size: 14px;
+}
+
+.sortingIcon {
+	background-position: -551px -176px;
+	width: 12px;
+	height: 22px;
+	display: inline-block;
+	position: absolute;
+	right: 10px;
+	top: 26px;
+	cursor: pointer;
+}
+
+.employerDetail {
+	border-top: 2px solid #013d5a;
+}
+
+.ShowingResult {
+	margin-bottom: 15px;
+}
+
+.searchResult .employerDetail .content {
+	border: 1px solid #cacaca;
+	padding-top: 20px;
+	border-radius: 5px;
+	margin-top: 40px;
+}
+
+.searchResult .content .headWrap img {
+	border: 1px solid #013d5a;
+	border-radius: 100%;
+	margin-right: 25px;
+}
+
+.searchResult .content .headWrap .colorOrange {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 16px;
+}
+
+.searchResult .content .headWrap div {
+	font-size: 20px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.searchResult .employerDetail .content .skill {
+	color: #858585;	
+	-ms-flex: 0 0 80px;
+	flex: 0 0 80px;
+	max-width: 80px;
+	font-size: 14px;
+}
+
+.searchResult .employerDetail .content .viewBookBtnWrap {
+	text-align: right;
+	background: #f0f0f0;
+	padding: 10px 20px;
+}
+
+.searchResult .employerDetail .content p {
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	margin-bottom: 18px;
+}
+
+.searchResult .detail {
+	padding: 0px 20px 20px 20px;
+}
+
+.searchResult .blueBtn {
+	margin-right: 15px;
+}
+
+.searchResult .content .headWrap {
+	margin-bottom: 30px;
+}
+
+.backBtn {
+	display: none;
+}
+
+.starIcon {
+	background-position: -115px -230px;
+	width: 25px;
+	height: 23px;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+
+.bookingWrap .messageIcon {
+	margin-left: 10px;
+}
+
+.bookingWrap .employerName {
+	font-size: 16px;
+}
+
+.bookingWrap .anumber {
+	color: #858585;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+}
+
+.bookingWrap .anumber  span {
+	color: #111;
+}
+
+.employeeProfileSchedule {
+	padding-top: 30px;
+}
+
+.employeeProfile .orangeBtn, .employeeProfile .blueBtn {
+	width: 165px;
+	margin-top: 45px;
+	margin-bottom: 30px;
+}
+
+.employeeProfile .blueBtn {
+	margin-right: 15px;
+}
+
+.acceptBookingWrap.employeeProfile {
+	padding-top: 10px;
+}
+
+.resuduleBooking {
+	margin-bottom: 30px;
+	display: block;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.contactInfoWrap {
+	max-width: 850px;
+	margin: auto;
+}
+
+.makeBooking .selectedDatesWrap label, .makeBooking .selectDatePricingWrap.pricingWrap label {
+	display: block;
+	font-size: 14px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	color: #111;
+	margin-bottom: 11px;
+}
+
+.makeBooking .selectedDatesWrap input {
+	width: 85px;
+	border: 1px solid #013d5a;
+	font-size: 14px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	color: #013d5a;
+	padding: 8px 15px;
+	border-radius: 3px;
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.makeBooking .selectedDatesWrap .custmCheckBox {
+	display: inline-block;
+}
+
+.makeBooking .selectedDatesWrap div {
+	margin-right: 30px;
+	color: #858585;
+}
+
+.makeBooking .selectedDatesWrap p {
+	margin-top: 0px;
+}
+
+.makeBooking .pricingWrap div {
+	color: #858585;
+	margin-right: 25px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+}
+
+.makeBooking .selectDatePricingWrap.pricingWrap {
+	padding-bottom: 40px;
+}
+
+.employeeProfile .blueBtn.generateQuot {
+	width: 200px;
+}
+
+.employeeProfile .orangeBtn.bookBtn {
+	width: 140px;
+}
+
+.employeeProfile .formWrap {
+	padding-top: 60px;
+}
+
+.employeeProfile .formWrap .orangeBtn, .employeeProfile .formWrap .blueBtn {
+	margin-bottom: 0px;
+	margin-top: 30px;
+}
+
+.makeBooking .DaysInfoWrap {
+	border: 1px solid #cacaca;
+	border-bottom: 0px;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	padding: 40px 20px;
+	padding-bottom: 0px;
+}
+
+.makeBooking .scheduleWrap {
+	border-radius: 0px;
+}
+
+.makeBooking .formWrap {
+	border: 1px solid #cacaca;
+	border-top: 0px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	padding: 40px 20px;
+}
+
+.makeBooking .formWrap textarea {
+	height: 150px;
+	resize: none;
+}
+
+.makeBooking .bookingDetailWrap {
+	margin-bottom: 40px;
+}
+
+.modalCloseButton {
+	position: absolute;
+	top: 13px;
+	right: 13px;
+	background: transparent;
+	border: none;
+}
+
+.signupModal .modal-content {
+	position: relative;
+}
+
+#bookingModal .ratingWrap {
+	
+	-ms-flex-pack: center;
+	justify-content: center
+	margin-bottom: 10px;
+}
+
+#bookingModal .ratingWrap div {
+	padding-left: 20px;
+	padding-right: 20px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+}
+
+.signupModal p {
+	margin-bottom: 4px;
+	margin-top: 0px;
+}
+
+.modalSmall .modal-content {
+	max-width: 590px;
+}
+
+#bookingModal  .fontBold {
+	margin-bottom: 20px;
+	font-size: 14px;
+	margin-top: 10px;
+}
+
+.congratsMessage {
+	font-size: 20px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	color: #013d5a;
+	margin-bottom: 50px;
+	margin-top: 0px;
+}
+
+header .droupWapContent {
+	padding-right: 0px;
+	position: absolute;
+	background: #013d5a;
+	width: 215px;
+	right: 0px;
+	top: 50px;
+	padding: 15px;
+	z-index: 9;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	padding-right: 0px !important;
+}
+
+header .droupWapContent a {
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	font-size: 14px;
+	padding-bottom: 13px;
+	display: block;
+}
+
+header .navbar-nav .nav-link.active, header .navbar-nav .nav-link:hover {
+	border-bottom: 2px solid #ef7624;
+	color: #ef7624;
+}
+
+.notificationWrap .NotifiHead {
+	background: #013d5a;
+	color: #fff;
+	padding: 10px 15px;
+	font-weight: 600;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+}
+
+.notificationWrap ul {
+	padding: 10px 15px;
+}
+
+.notificationWrap {
+	width: 300px;
+	position: absolute;
+	right: 26px;
+	z-index: 9;
+	background: #fff;
+	top: 67px;
+	border: 1px solid #013d5a;
+	border-radius: 5px;
+}
+
+.inline-block {
+	display: inline-block;
+}
+
+.notificationWrap ul li a {
+	color: #858585;
+	display: block;
+	margin-bottom: 10px;
+	font-weight: 500;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	line-height: 1.6;
+	border-bottom: 1px solid #cacaca;
+	padding-bottom: 10px;
+}
+
+.notificationWrap ul li:last-child a {
+	border-bottom: none;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+.notificationWrap:after {
+	width: 0;
+	height: 0;
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	border-bottom: 13px solid #013d5a;
+	position: absolute;
+	bottom: 100%;
+	content: '';
+	right: 10px;
+}
+
+.removeIcon {
+	background-position: -150px -230px;
+	width: 26px;
+	height: 26px;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+
+.shortlistedWrap .chatIcon {
+	margin-right: 10px;
+}
+
+.shortlistedWrap table a:first-child {
+	margin-right: 20px;
+}
+
+.shortlistedWrap table .width-4 {
+	width: 6%
+}
+
+.shortlistedWrap table .width-32 {
+	width: 30%
+}
+
+.acceptBookingWrap.shortlistedWrap h3 {
+	margin-top: 0px;
+}
+
+/*message page css*/
+.mt-5 {
+	margin-top: 5px !important;
+}
+
+.text-left {
+	text-align: left !important;
+}
+
+.img-fluid {
+	max-width: 100%;
+}
+
+.align-self-center {
+	-ms-flex-item-align: center !important;
+	align-self: center
+}
+
+.h-100 {
+	height: 100% !important;
+}
+
+.chat-main-wrapper input:focus, .chat-main-wrapper textarea:focus {
+	outline: none;
+}
+
+.chat-main-wrapper {
+	padding: 50px 0;
+}
+
+.chat-main-wrapper .user-search {
+	border: 1px solid #d8d8d8;
+	border-radius: 5px;
+	background: #ffffff;
+}
+
+.chat-main-wrapper .user-search .search-box {
+	background: #f0f0f0;
+	padding: 10px;
+}
+
+.search-box {
+	padding: 10px;
+}
+
+.chat-main-wrapper .user-search .search-box input, .search-box input {
+	background: #ffffff;
+	border-radius: 5px;
+	border: 1px solid #eaeaea;
+	color: #111111;
+	width: 100%;
+	padding: 10px;
+}
+
+.chat-main-wrapper .user-detail {
+	padding: 10px;
+	cursor: pointer;
+	border-bottom: 1px solid #dedede;
+}
+
+.chat-main-wrapper .user-detail:last-child {
+	border-bottom: 0;
+}
+
+.chat-main-wrapper .user-detail.active, .chat-main-wrapper .user-detail:hover {
+	background-color: #013d5a;
+}
+
+.chat-main-wrapper .user-list {
+	height: 560px;
+}
+
+.chat-main-wrapper .mCSB_inside > .mCSB_container {
+	margin-right: 0;
+}
+
+.chat-main-wrapper .mCSB_scrollTools .mCSB_draggerRail {
+	width: 12px;
+	background: #e0e0e0;
+	border-radius: 0;
+}
+
+.chat-main-wrapper .mCSB_scrollTools {
+	width: 12px;
+}
+
+.chat-main-wrapper .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar, .chat-main-wrapper .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar:hover {
+	width: 12px;
+	border-radius: 0;
+	background: #878787 !important;
+}
+
+.chat-main-wrapper .user-list .user-detail  .user-image {
+	display: inline-block;
+	vertical-align: middle;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	overflow: hidden;
+	border: 1px solid #1b4861;
+	margin-right: 20px;
+}
+
+.chat-main-wrapper .user-list .user-detail  .user-name {
+	color: #111111;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+}
+
+.chat-main-wrapper .user-list .user-detail.active  .user-name, .chat-main-wrapper .user-list .user-detail:hover  .user-name {
+	color: #ffffff;
+}
+
+.chat-main-wrapper .chat-header {
+	background: #F0F0F0;
+	color: #013D5A;
+	font-family: 'Montserrat', sans-serif;
+	padding: 10px 15px;
+}
+
+.chat-main-wrapper .chat-footer {
+	background: #F0F0F0;
+	padding: 15px;
+}
+
+.chat-main-wrapper .chat-footer .text-box {
+	flex: 1;
+}
+
+.chat-main-wrapper .chat-footer .text-box textarea {
+	width: 100%;
+	background: #fff;
+	border-radius: 3px;
+	border: 1px solid #2D5F77;
+	height: 35px;
+	padding: 8px 10px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12px;
+	font-weight: 600;
+	resize: none;
+}
+
+.chat-main-wrapper .chat-footer .button-box {
+	width: 102px;
+	text-align: right;
+}
+
+.chat-main-wrapper .chat-footer button {
+	background: #EF7624;
+	color: #fff;
+	font-size: 14px;
+	font-family: inherit;
+	border-radius: 5px;
+	border: 1px solid #EF7624;
+	font-weight: 600;
+	height: 35px;
+	width: 82px;
+	padding: 0;
+	outline: none;
+}
+
+.chat-main-wrapper .chat-header .user-info-box span {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	color: #013d5a;
+}
+
+.chat-main-wrapper .chat-header .user-info-box span.icon {
+	display: inline-block;
+	vertical-align: middle;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	overflow: hidden;
+	border: 1px solid #1b4861;
+	margin-right: 20px;
+}
+
+.chat-main-wrapper .chat-header .user-info-box span.icon img, .chat-main-wrapper .user-list .user-image img {
+	width: 100%;
+	height: 100%;
+}
+
+.chat-main-wrapper .chat-header .chat-refresh-box span.icon {
+	background: url('../images/Sprite.png') no-repeat -20px -230px;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+
+.chat-main-wrapper .chat-header .chat-refresh-box span {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	color: #013d5a;
+}
+
+.chat-main-wrapper .chat-header .chat-refresh-box button {
+	background: transparent;
+	outline: none;
+	border: none;
+	padding: 0;
+}
+
+.chat-main-wrapper .user-chat-container {
+	border: 1px solid #D7D7D7;
+	border-radius: 5px;
+}
+
+.chat-main-wrapper .chat-body {
+	background: #ffffff;
+	padding: 10px 20px;
+}
+
+.chat-main-wrapper .chat-body .message-box {
+	margin-bottom: 25px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.chat-main-wrapper .chat-body .message-box.right-aligned-message .message-wrapper {
+	margin-left: auto;
+	text-align: right;
+}
+
+.chat-main-wrapper .chat-body .message-wrapper {
+	margin-bottom: 15px;
+	max-width: 510px;
+}
+
+.chat-main-wrapper .chat-body .message-box .date-message {
+	color: #858585;
+	font-size: 13px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+}
+
+.chat-main-wrapper .chat-body .message-wrapper .message-div {
+	border: 1px solid #D4D4D4;
+	color: #111111;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 19px;
+	padding: 10px 20px;
+	border-radius: 5px;
+	display: inline-block;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.pad-mobile-0 {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+/*end*/
+.overlay {
+	background: rgba(0, 0, 0, .7);
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+}
+.addManagerBtn{
+	margin-right: 0px;
+	margin-bottom: 30px;
+}
+
+.MobiletabWrap .bookingDetailInfo .d-flex .detail{
+	word-wrap: break-word;
+}
+.mar-rt-15{
+	margin-right: 15px!important;
+}
+
+.search-box input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #111;
+  opacity: 1;
+}
+.search-box input::-moz-placeholder { /* Firefox 19+ */
+  color: #111;
+  opacity: 1;
+}
+.search-box input:-ms-input-placeholder { /* IE 10+ */
+  color: #111;
+  opacity: 1;
+}
+.search-box input:-moz-placeholder { /* Firefox 18- */
+  color: #111;
+  opacity: 1;
+}
+.search-box input{
+	font-weight: 600;	
+	font-family: 'Montserrat', sans-serif;
+}
+
+.LoginMobilePage{
+	padding-top: 50px;
+	padding-bottom: 30px;
+}
+.LoginMobilePage h2{
+	font-size: 18px;
+	color: #111;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	margin-top: 0px;
+	margin-top: 40px;
+	margin-bottom: 30px;
+}
+.LoginMobilePage .orangeBtn{
+	margin-top: 15px;
+}
+.LoginMobilePage .forgotLink,.LoginMobilePage .signUpLink{
+	font-size:16px;
+	color: #111;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	color: #013d5a;
+	margin-top: 30px;
+	display: inline-block;
+}
+.LoginMobilePage .signUpLink{
+	margin-top: 60px;
+}
+.LoginMobilePage .termsPrivacy{
+	font-size: 12px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	color: #111;
+	line-height: 1.8;
+}
+.LoginMobilePage .termsPrivacy a{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	color: #013d5a;
+}
+.LoginMobilePage .radioWrap [type="radio"]:checked + label, .LoginMobilePage .radioWrap [type="radio"]:not(:checked) + label{
+	color: #858585;
+}
+.viewPassIcon{
+	background: url('../images/eye_1.png');
+	background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+    display: block;
+    background-size: 100%;
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+
+}
+.viewPassIcon.show{
+	background: url('../images/eye_2.png');
+	background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+    display: block;
+    background-size: 100%;
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+}
+.topServiceSlider .owl-carousel .owl-item  .logoLg{
+	width: 84px;
+}
+.max-width-100{
+	max-width: 100%!important;
+}
+.employeeBookingTab li{
+	-ms-flex: 0 0 33.33%;
+	flex: 0 0 33.33%;
+	max-width: 33.33%;
+}
+.align-items-end{
+	-ms-flex-align: end;
+	align-items: flex-end;
+}
+.employeeSchedule{
+	margin-top: 40px;
+}
+
+.markCompensatoryWrap{
+	display: flex;
+}
+.markCompensatoryWrap button{
+	width: 100%!important;
+}
+.markCompensatoryWrap div{
+	margin-right: 5px;
+	padding-left: 5px;
+	flex: 0 0 50%;
+	max-width: 50%;
+}
+.markCompensatoryWrap .blueBtn {
+    margin-right: 0px;
+}
+.employeeBookingSummaryWrap.bookingSummaryWrap .orangeBg, .bookingSummaryWrap.employeeBookingSummaryWrap .blueBg{
+	min-height: 155px;
+	padding-top: 21px;
+	padding-bottom: 28px;
+}
+.totalWrap .pad-20{
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 20px;
+	margin-bottom: 0px;
+}
+.totalBillWrap .totalBillInfo{
+	padding-left: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.totalBillWrap .totalBillInfo2{
+	padding-left: 0px;
+}
+.totalWrap .totalBillWrap div{
+	margin-bottom: 0px;
+}
+.totalWrap .totalBillWrap{
+	margin-bottom: 0px;
+}
+.totalWrap .row{
+	margin-bottom: 0px;
+}
+.bgTransparent{
+	background: transparent!important;
+}
+#forgotModal .modal-content h2{
+	margin-bottom: 35px;
+}
